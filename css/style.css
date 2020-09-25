@@ -1,0 +1,103 @@
+body{
+	font-family: 'Titillium Web', sans-serif;
+<<<<<<< HEAD
+	position: sticky;
+ 	background-image: url("images/backgroundum2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.navbar{
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 60, .05);
+    min-height: 70px
+}
+.nav-link{color: rgba(0, 0, 170, .9); font-family: "Times New Roman", Times, serif;}
+.nav-link:hover{color: rgba(194, 113, 0, 1);}
+.nombrejuego{color: rgba(0, 0, 170, .9);}
+.nombrejuego:hover{color: rgba(194, 113, 0, 1);}
+.logo-brand{
+	color: black
+	min-width: 140px;
+	max-width: 120px;
+}
+.navbar.toggler{font-size: 40px}
+.navbar.toggler:focus{outline: none0}
+
+#hero {
+	
+	padding-top: 90px;
+	min-height: 700px;
+	color: #ffffff;
+}
+#sem {
+	color: black;
+	text-align: center;
+}
+
+.content-center{
+	max-width: 1200px;
+	margin: 0 auto 60 px auto;
+	text-align: center;
+}
+
+h1{ font-size: 66px; font-weight: 600; line-height: 80px; }
+h4{ color: blue; 
+	font-family: "Times New Roman", Times, serif;
+    }
+
+p{
+	font-size: 18px;
+	color: grey;
+	line-height: 1.8;
+	margin-bottom: 0;
+}
+
+#hero p {
+	color: white;
+}
+.btn-light{
+	margin-bottom: 10px;
+	width: 100px;
+	height: 70px;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+.col-1{
+	display: table;
+}
+
+div.row{	
+	width: 1300px;
+	height: 600px;
+}
+
+#backg{
+	float: left;
+	margin-left: 25px;
+	
+}
+
+#analisis2:hover{
+
+}
+=======
+}
+.navbar{
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
+    min-height: 70px
+}
+.nav-link{color: black}
+.nav-link:hover{color: grey}
+.nombrejuego{color: black;}
+.nombrejuego:hover{color: grey;}
+.logo-brand{
+	color: black
+	min-width: 40px;
+	max-width: 30px;
+}
+.navbar.toggler{font-size: 40px}
+.navbar.toggler:focus{outline: none}
+>>>>>>> 7dd9e03f098074ea0646a712969d6591676e1aee

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" id="Civil">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<style src="css/style.css"></style>-->
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+
+    <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="icon" href="images/umlog.ico">
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Grilla ingenieria Civil</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg overflow" style="overflow: inherit;">
+    <div class="container" >  <!-- me centra los elementos de la barra de nav-->
+        <a class="navbar-brand" href="#"><img src="images/logoum.png" class="logo-brand" alt="logo" ></a>
+
+        <h4 class="nombrejuego">&nbsp;&nbsp;&nbsp;&nbsp;Ingenieria Civil</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class = "icon ion-md-grid" > </i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto" id="navbar">
+                <li class="nav-item " style="border-radius: 25px;background-color: lightgrey" >
+                    <a class="nav-link" href="civil.html" id="boton1">Civil</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="index.html" id="boton2" >Industrial</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="Telematica.html" id="boton3">Telematica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Informatica.html " id="boton4">Informatica</a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<span class="container" id="backgfil">
+<button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
+<button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
+<button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
+</span>
+
+
+<section id="hero"  >
+    <div class="container" id="backg">
+        <div class="row" id="todos">
+            <div class="col-1 borde" id="sem1"><div>I</div><hr>
+                <div><button type="button" class="btn btn-light" id="analisis1">Analisis I</button></div>
+                <div><button type="button" class="btn btn-light" id="gal1">GAL I</button></div>
+                <div><button type="button" class="btn btn-light" id="fisica1">Fisica I</button></div>
+                <div><button type="button" class="btn btn-light" id="intRob">Introduccion a la robotica</button></div>
+                <div><button type="button" class="btn btn-light" id="intIng">Introduccion a la ingenieria</button></div>
+
+            </div>
+
+            <div class="col-1 borde" id="sem2"><div>II</div><hr>
+                <div><button type="button" class="btn btn-light" id="analisis2">Analisis II</button></div>
+                <div><button type="button" class="btn btn-light" id="gal2">GAL II</button></div>
+                <div><button type="button" class="btn btn-light" id="fisica2">Fisica II</button></div>
+                <div><button type="button" class="btn btn-light" id="matlab">Matlab</button></div>
+                <div><button type="button" class="btn btn-light" id="funQui">Fundamentos Quimicos</button></div>
+
+            </div>
+
+            <div class="col-1 borde" id="sem3"><div>III</div><hr>
+                <div><button type="button" class="btn btn-light" id="caluclo">&nbsp;&nbsp;&nbsp;&nbsp; Calculo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numerico</button></div>
+                <div><button type="button" class="btn btn-light" id="analisis3">Analisis III</button></div>
+                <div><button type="button" class="btn btn-light " id="mecanica1">Mecanica I</button></div>
+                <div><button type="button" class="btn btn-light " id="cad">Laboratorio &nbsp;&nbsp; CAD</button></div>
+                <div><button type="button" class="btn btn-light " id="itnrotermo"  style="font-size: 9px">Introduccion&nbsp;&nbsp;a &nbsp;&nbsp;&nbsp;&nbsp;la &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Termodinamica</button></div>
+                <div><button type="button" class="btn btn-light " id="ch1">&nbsp;&nbsp;&nbsp;Ciencias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; humanas I</button></div>
+
+            </div>
+
+            <div class="col-1 borde" id="sem4"><div>IV</div><hr>
+                <div><button type="button" class="btn btn-light" id="prob">Probabilidad y estadistica</button></div>
+                <div><button type="button" class=" btn btn-light " id="mecanica2">Mecanica II</button></div>
+                <div><button type="button" class="btn btn-light " id="procontru1" style="font-size: 11px">Procedimiento de construccion I</button></div>
+                <div><button type="button" class="btn btn-light " id="resMat">Recistencia de materiales</button></div>
+                <div><button type="button" class="btn btn-light " id="lbcivil1">Laboratorio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Civil I</button></div>
+                <div><button type="button" class="btn btn-light " id="eco">Economia</button></div>
+                <div><button type="button" class="btn btn-light " id="comProf">Comunicacion profesional</button></div>
+
+            </div>
+            <div class="col-1 borde" id="sem5"><div>V</div><hr>
+                <div><button type="button" class="btn btn-light" id="ivestOper">Investigacion operativa</button></div>
+                <div><button type="button" class=" btn btn-light " id="hidro">Hidraúlica</button></div>
+                <div><button type="button" class="btn btn-light " id="pasantia1">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional I</button></div>
+                <div><button type="button" class="btn btn-light " id="resMat2">Recistencia de materiales II</button></div>
+                <div><button type="button" class="btn btn-light " id="ceinIngMat">Ciencia e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ingeniaria de materiales</button></div>
+                <div><button type="button" class="btn btn-light " id="lbcivil2">Laboratorio &nbsp;&nbsp;&nbsp;&nbsp;Civil II</button></div>
+                <div><button type="button" class="btn btn-light "  id="contYcost">Contabiliidad y costos</button></div>
+
+            </div>
+            <div class="col-1 borde" id="sem6"><div>VI</div><hr>
+                <div><button type="button" class="btn btn-light" id="topocart"> Topografia y cartografia</button></div>
+                <div><button type="button" class=" btn btn-light " id="hidrolog">Hidrología</button></div>
+                <div><button type="button" class="btn btn-light " id="mecsuelo">Mecanica de &nbsp;&nbsp; Suelos I</button></div>
+                <div><button type="button" class="btn btn-light " id="resMat3">Resistencia de Materiales III</button></div>
+                <div><button type="button" class="btn btn-light " id="horm">Hormigón</button></div>
+                <div><button type="button" class="btn btn-light " id="teologia">Cuestiones de la teologia</button></div>
+                <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet1">CET/IDIOMAS/MLE</button></div>
+                 -->
+            </div>
+            <div class="col-1 borde" id="sem7"><div>VII</div><hr>
+                <div><button type="button" class="btn btn-light" id="gestCal">Gestion de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; calidad</button></div>
+                <div><button type="button" class="btn btn-light " id="mecsuelo2">Mecanica de &nbsp;&nbsp;&nbsp; Suelos II</button></div>
+                <div><button type="button" class="btn btn-light " id="resMat4">Resistencia de Materiales IV</button></div>
+                <div><button type="button" class="btn btn-light " id="horm2">Hormigón II</button></div>
+                <div><button type="button" class="btn btn-light " id="ingAmbiental">&nbsp;&nbsp;&nbsp;&nbsp;Ingenieria &nbsp;&nbsp;&nbsp;&nbsp; ambiental</button></div>
+                <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet2">CET/IDIOMAS/MLE</button></div>
+                 -->
+            </div>
+            <div class="col-1 borde" id="sem8"><div>VIII</div><hr>
+                <div><button type="button" class="btn btn-light " id="pasantia2">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional II</button></div>
+                <div><button type="button" class="btn btn-light" id="plomeria1">Ingenieria  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sanitaria I</button></div>
+                <div><button type="button" class="btn btn-light " id="elcamino">Caminos</button></div>
+                <div><button type="button" class="btn btn-light " id="trans">Transporte</button></div>
+                <div><button type="button" class="btn btn-light " id="lbcivil3">Laboratorio &nbsp;&nbsp;&nbsp;&nbsp;Civil III</button></div>
+                <div><button type="button" class="btn btn-light " id="ch2">&nbsp;&nbsp;&nbsp; Ciencias &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; humanas II</button></div>
+                <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet3">CET/IDIOMAS/MLE</button></div>
+                 -->
+            </div>
+            <div class="col-1 borde" id="sem9"><div>IX</div><hr>
+                <div><button type="button" class="btn btn-light" style="font-size: 11px" id="plomeria2"> &nbsp;&nbsp;&nbsp; Ingenieria &nbsp;&nbsp;&nbsp;&nbsp; Sanitaria II</button></div>
+                <div><button type="button" class="btn btn-light " id="estrucmetalywood">Estructura metálicass y de madera</button></div>
+                <div><button type="button" class="btn btn-light " id="pasantia3">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional III</button></div>
+                <div><button type="button" class="btn btn-light " id="ingtranspor">Ingniería de &nbsp;&nbsp;&nbsp;&nbsp; Transporte</button></div>
+                <div><button type="button" class="btn btn-light " id="proyInven">Proyecto de &nbsp;&nbsp;&nbsp; inversion</button></div>
+                <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet4">CET/IDIOMAS/MLE</button></div>
+                 -->
+            </div>
+            <div class="col-1 borde" id="sem10"><div>X</div><hr>
+                <div><button type="button" class="btn btn-light" style="font-size: 11px" id="proyCiv">Proyecto=CIV</button></div>
+                <div><button type="button" class=" btn btn-light " id="elemGestion">Elementos de &nbsp;&nbsp;&nbsp;&nbsp;gestion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;empresarial</button></div>
+                <div><button type="button" class="btn btn-light " id="gestiProy">&nbsp;&nbsp; Gestion de &nbsp;&nbsp;&nbsp;&nbsp;proyectos</button></div>
+                <div><button type="button" class="btn btn-light " id="etica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Etica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; profesional</button></div>
+                <!--       <div><button type="button" class="btn btn-light " id="cet5" style="font-size: 11px">CET/IDIOMAS/MLE</button></div>
+                 -->      </div>
+            <div class="container" id="conteinercets">
+                <div><button type="button" class="btn btn-light" id="cets" style="font-size: 11px" onclick="cets()">CET/IDIOMAS/MLE</button></div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <button href="#" id="btn-cerrar-popup" class="btn-cerrar-popup" onclick="cerrar()"><i class="fa fa-times"></i></button>
+                <h3>TEXTO2</h3>
+                <h4>mas teto2</h4>
+
+
+            </div>
+        </div>
+        <div class="overlay" id="overlay2">
+            <div class="popup" id="popup2">
+                <button href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup" onclick="cerrar2()"><i class="fa fa-times"></i></button>
+                <h3>TEXTO2</h3>
+                <h4>mas teto2</h4>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script type="text/javascript" src = "jsc/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
