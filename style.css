@@ -20,6 +20,7 @@ body{
 	}
 	
 	
+	
 }
 @media screen and (min-width: 1200px){ 
 	.genEspCom{
@@ -110,6 +111,9 @@ body{
 	}
 	button#cets {
     max-width: 92%;
+	}
+	#footer-content{
+		visibility: hidden;
 	}
 
 }
@@ -223,7 +227,13 @@ body{
 	width:100%;
 	background-color: #004E91;
 }
-
+#footer-content {
+	background: #004E91;
+	width: 100%;
+  	left: 0;
+	  bottom: 0;
+	  position:fixed;
+  }
 .navbar{
     background-color: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 60, .05);
