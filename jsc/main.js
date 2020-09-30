@@ -116,18 +116,7 @@ let materiastel=[
         "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "gal2",
-        "hijo": ["gal1"],
-        "cat": "G",
-        "nombre":"Geometría y algebra lineal II",
-        "profesor":"Alfredo Piria",
-        "creditos":"9",
-        "semestre":"II",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+ 
      {
         "id": "caluclo",//calculo?
         "hijo": ["analisis2", "gal2"],
@@ -2583,6 +2572,407 @@ let materiasinf=[
         "descripcion":""
     }
 ];
+let materiasCienciaDatos=[
+    {
+    "id": "CalculoBasico",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"I",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Algebra",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"7.5",
+        "semestre":"I",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "PrincipiosDeAdministracion",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"I",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "ComunicacionProfesional",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"I",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "IntroduccionAnaliticaEmpresarial",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"I",
+        "exonerable":"",
+        "descripcion":""
+    },//SEM2
+     {
+    "id": "Introduccion a la Economia",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"II",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Calculo",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"9",
+        "semestre":"II",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Antropologia",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"II",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Programacion Analitica",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"9",
+        "semestre":"II",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Introduccion a la Contabilidad",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"7.5",
+        "semestre":"II",
+        "exonerable":"",
+        "descripcion":""
+    },//SEM3
+     {
+    "id": "Diseño de base de datos 1",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"7.5",
+        "semestre":"III",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Análisis Financiero Internacional",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"7.5",
+        "semestre":"III",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Probabilidad",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"7.5",
+        "semestre":"III",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Introducción a la Ciencia de Datos",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"III",
+        "exonerable":"",
+        "descripcion":""
+    },//SEM4
+     {
+    "id": "Estadística I",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"9",
+        "semestre":"IV",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Matemática Financiera",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"IV",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Inteligencia de Negocios",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"IV",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Ética Profesional I",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"4.5",
+        "semestre":"IV",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Estrategia de Dirección I",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"IV",
+        "exonerable":"",
+        "descripcion":""
+    },//SEM5
+     {
+    "id": "Estadística II",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"V",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Investigación operativa I",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"V",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Tecnologías de Avanzada",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"V",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Aprendizaje Automático",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"V",
+        "exonerable":"",
+        "descripcion":""
+    },
+     {
+    "id": "Investigación de mercado",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"V",
+        "exonerable":"",
+        "descripcion":""
+    },//SEM6
+    {
+    "id": "Cuestiones de Teología",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"4.5",
+        "semestre":"VI",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Finanzas I",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"8",
+        "semestre":"VI",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Econometría I",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"9",
+        "semestre":"VI",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Analítica de Negocios",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"VI",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Gestión de sistemas de información",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"VI",
+        "exonerable":"",
+        "descripcion":""
+    },//SEM7
+    {
+    "id": "Ética Profesional II",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"4.5",
+        "semestre":"VII",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Proyectos de Inversión",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"4.5",
+        "semestre":"VII",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Pasantía Social",
+    "hijo": [],
+        "cat": "G",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"1.5",
+        "semestre":"VII",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Contabilidad de Gestión",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"VI",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Marketing Digital",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"4.5",
+        "semestre":"VII",
+        "exonerable":"",
+        "descripcion":""
+    },
+    {
+    "id": "Derecho Telemático",
+    "hijo": [],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"4.5",
+        "semestre":"VII",
+        "exonerable":"",
+        "descripcion":""
+    },//SEM8
+    {
+        "id": "PROYECTO DE FIN DE CARRERA",
+        "hijo": [],
+            "cat": "E",
+            "nombre":"",
+            "profesor":"",
+            "creditos":"30",
+            "semestre":"VIII",
+            "exonerable":"",
+            "descripcion":""
+        },
+    
+
+
+]
 
 
 
@@ -2602,44 +2992,114 @@ else if (htmlid =="Civil"){
 else if( htmlid=="Telematica"){
     materias=materiastel;
 }
-//let materias = [{"id": "analisis2", "hijo": ["analisis1"]}];
+else if( htmlid=="Telematica"){
+    materias=materiastel;
+}
+else if( htmlid=="cienciaDatos"){
+    materias=materiasCienciaDatos;
+}
+
 const mouseTarget = document.getElementsByClassName("btn");
+makeGird();
+addCredit();
 
+function addCredit(){
+    for(i =0;i<materias.length;i++){
+        document.getElementById(materias[i].id).innerHTML+=  "<br> ("+ materias[i].creditos +") ";
+    }
+}
 
+function makeGird(){
+    
+    if(htmlid=="cienciaDatos"){
+       
+    
+    for(i =0;i<materias.length;i++){
+       let mycol = document.createElement("button");
+       mycol.className ="btn btn-light" ;
+       mycol.innerHTML=materias[i].id;
+       mycol.id=materias[i].id;
+       if (materias[i].semestre=="I"){
+            document.getElementById("sem1").appendChild(mycol);
+       }
+       if (materias[i].semestre=="II"){
+        document.getElementById("sem2").appendChild(mycol);
+      
+    }
+    if (materias[i].semestre=="III"){
+        document.getElementById("sem3").appendChild(mycol);
+      
+    }
+    if (materias[i].semestre=="IV"){
+        document.getElementById("sem4").appendChild(mycol);
+      
+    }
+    if (materias[i].semestre=="V"){
+        document.getElementById("sem5").appendChild(mycol);
+      
+    }
+    if (materias[i].semestre=="VI"){
+        document.getElementById("sem6").appendChild(mycol);
+      
+    }
+    if (materias[i].semestre=="VII"){
+        document.getElementById("sem7").appendChild(mycol);
+      
+    }
+    if (materias[i].semestre=="VIII"){
+        document.getElementById("sem8").appendChild(mycol);
+      
+    }
+}
+}
+}
 
 var staticbool=true;
 var isfiltred=false;
-filtro();   
-function filtro(id){
-  
 
+function filtro(id){
+    var a;
+    if (id=="filtroE") {
+        isfiltred=true;
+        a="E";
+    }
+    else if(id=="filtroG"){
+        a="G"
+
+        isfiltred=true;
+    }
+    else if(id=="filtroC"){
+        a="C"
+        isfiltred=true;
+
+    }
     for (i=0; i<materias.length; i++){
 
         if(true){
-        if (materias[i].cat=="E" && materias[i].cat=="E"){
+        if (materias[i].cat=="E" && materias[i].cat==a){
             document.getElementById(materias[i].id).style.backgroundColor="rgba(0,200,0,0.5)";
             document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.2rem rgba(033,231,0,0.5)";
 
         }
-        else if (materias[i].cat=="G" && materias[i].cat=="G"){
+        else if (materias[i].cat=="G" && materias[i].cat==a){
             document.getElementById(materias[i].id).style.backgroundColor="rgba(23,162,184,0.5)";
             document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.2rem rgba(58,176,195,0.5)";
 
         }
-        else if (materias[i].cat=="C" && materias[i].cat=="C"){
+        else if (materias[i].cat=="C" && materias[i].cat==a){
             document.getElementById(materias[i].id).style.backgroundColor="rgba(255,190,7,0.5)";
             document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.2rem rgba(255,231,130,0.5)";
 
         }
-       else if(!materias[i].cat !== "E" && !materias[i].cat !== "G" && !materias[i].cat !== "c" ){
-            document.getElementById(materias[i].id).style.backgroundColor = "rgb(255, 247, 239)";
+       else if(!materias[i].cat !== a){
+            document.getElementById(materias[i].id).style.backgroundColor = "rgb(204, 204, 204)";
             document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.0rem rgba(216,217,219,0.0)";
         }
 
         }
         else if (id=="todo") {
 
-            document.getElementById(materias[i].id).style.backgroundColor = "rgb(255, 247, 239)";
+            document.getElementById(materias[i].id).style.backgroundColor = "rgb(204, 204, 204)";
             document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.0rem rgba(216,217,219,0.0)";
 
         }
@@ -2655,7 +3115,7 @@ function filtro(id){
 function pintar(idpadre) {
 if(!isfiltred){
     for (i = 0; i < materias.length; i++) {
-
+        
         if (materias[i].id === idpadre) {
 
             for (j = 0; j < materias[i].hijo.length; j++) {
@@ -2678,20 +3138,22 @@ if (!isfiltred ) {
 
                 if (materias[i].hijo[j] !== null){
 
-                    document.getElementById(materias[i].id).style.backgroundColor = "rgb(255, 247, 239)";
+                    document.getElementById(materias[i].id).style.backgroundColor = "rgb(204, 204, 204)";
                     document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.0rem rgba(216,217,219,0.5)";
-                    document.getElementById(materias[i].hijo[j]).style.backgroundColor = "rgb(255, 247, 239)";
+                    document.getElementById(materias[i].hijo[j]).style.backgroundColor = "rgb(204, 204, 204)";
                     document.getElementById(materias[i].hijo[j]).style.boxShadow = "0px 0px 0px 0.0rem rgba(216,217,219,0.5)";
                 }
             }
     }
 }
-filtro();
+
 }
 
 function setValue(value) {
     document.getElementById('value').value = value;
 }
+
+
 
 /*function informar(idtemp) {
     var i, l, options = [{
@@ -2845,7 +3307,28 @@ loop()
 
 idPadre = null;
 
-//0
+for (let index = 0; index < mouseTarget.length; index++) {
+ 
+    mouseTarget[index].addEventListener('mouseenter', event => {
+        pintar(mouseTarget[index].id);
+        
+      })
+      mouseTarget[index].addEventListener('mouseleave', event => {
+        despintar(mouseTarget[index].id);
+        
+      })
+
+      mouseTarget[index].addEventListener('click', event => {
+        informar(mouseTarget[index].id);
+        
+      })
+    
+}
+
+
+
+ //0
+ /*
 mouseTarget[0].addEventListener("mouseenter", e => {
     pintar(mouseTarget[0].id);
 });
@@ -3236,6 +3719,7 @@ mouseTarget[38].addEventListener("click", event => {
     informar(mouseTarget[38].id);
 });
 //39
+if (materias != materiasCienciaDatos){
 mouseTarget[39].addEventListener("mouseenter", e => {
     pintar(mouseTarget[39].id);
 });
@@ -3245,6 +3729,7 @@ mouseTarget[39].addEventListener("mouseleave", e => {
 mouseTarget[39].addEventListener("click", event => {
     informar(mouseTarget[39].id);
 });
+
 //40
 mouseTarget[40].addEventListener("mouseenter", e => {
     pintar(mouseTarget[40].id);
@@ -3443,9 +3928,10 @@ if(htmlid=="Industrial" || htmlid =="Civil" || htmlid =="Telematica"){
     });}
 
 
-
-
 }
+}*/
+
+
 document.getElementById("filtroE").addEventListener("click",e=>{filtro("filtroE")})
 
 document.getElementById("filtroG").addEventListener("click",e=>{filtro("filtroG")})

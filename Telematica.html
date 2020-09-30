@@ -24,48 +24,47 @@
 </head>
 
 <body id="body">
-<nav class="navbar navbar-expand-lg overflow" style="overflow: inherit;">
-    <div class="container" >  <!-- me centra los elementos de la barra de nav-->
-        <a class="navbar-brand" href="#"><img src="images/logoum.png" class="logo-brand" alt="logo" ></a>
-
-        <h4 class="nombrejuego">&nbsp;&nbsp;&nbsp;&nbsp;Ingenieria Telematica</h4>
+    <nav class="navbar navbar-expand-lg overflow" id="backnavbarr">
+        <div class="container" id="centrarbarra" >  <!-- me centra los elementos de la barra de nav-->
+        
+        <a class="navbar-brand " href="#"><img src="http://fceecat.um.edu.uy/imgs/logo.png"  class="logo-brand" alt="logo" ></a>
+        <h4 class="nombrejuego">Ingenieria Telematica</h4>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class = "icon ion-md-grid" > </i>
+        <i class = "icon ion-md-grid" > </i>  
         </button>
-
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav ml-auto" id="navbar">
-                <li class="nav-item "  >
-                    <a class="nav-link" href="civil.html" id="boton1">Civil</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" href="index.html" id="boton2" >Industrial</a>
-                </li>
-                <li class="nav-item " style="border-radius: 25px;background-color: lightgrey">
-                    <a class="nav-link" href="Telematica.html" id="boton3">Telematica</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Informatica.html " id="boton4">Informatica</a>
-                </li>
-                
-            </ul>
+      
+          <ul class="navbar-nav ml-auto" id="navbar">
+            <li class="nav-item active">
+              <a class="nav-link" href="civil.html" id="boton1" >Civil</a>
+            </li>
+            <li class="nav-item"  >
+              <a class="nav-link" href="index.html" id="boton2" ; >Industrial</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="Telematica.html" style="color: rgba(194, 113, 0, 1)" id="boton3">Telematica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Informatica.html " id="boton4">Informatica</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cienciaDatos.html" id="boton5">Ciencia de Datos</a>
+              </li>
+            
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+      </nav>
 
-<span class="container" id="backgfil">
-<button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
-<button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
-<button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
-</span>
 
 
 <section id="hero"  >
-    <div class="container" id="backg">
+    <div class="container-fluid" id="backg">
 
-        <div class="row" id="todos">
-            <div class="col-1 borde" id="sem1"><div>I</div><hr>
+        <div class="row justify-content-center" id="todos">
+            <div class="col-1 borde" id="sem1"><div>Sem I <br> (37.5)</div><hr>
                 <div><button type="button" class="btn btn-light" id="analisis1">Analisis I</button></div>
                 <div><button type="button" class="btn btn-light" id="gal1">GAL I</button></div>
                 <div><button type="button" class="btn btn-light" id="fisica1">Fisica I</button></div>
@@ -74,7 +73,7 @@
 
             </div>
 
-            <div class="col-1 borde" id="sem2"><div>II</div><hr>
+            <div class="col-1 borde" id="sem2"><div>Sem II<br> (39)</div><hr>
                 <div><button type="button" class="btn btn-light" id="analisis2">Analisis II</button></div>
                 <div><button type="button" class="btn btn-light" id="gal2">GAL II</button></div>
                 <div><button type="button" class="btn btn-light" id="fisica2">Fisica II</button></div>
@@ -83,17 +82,17 @@
 
             </div>
 
-            <div class="col-1 borde" id="sem3"><div>III</div><hr>
-                <div><button type="button" class="btn btn-light" id="caluclo">&nbsp;&nbsp;&nbsp;&nbsp; Calculo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numerico</button></div>
+            <div class="col-1 borde" id="sem3"><div>Sem III<br> (42)</div><hr>
+                <div><button type="button" class="btn btn-light" id="caluclo"> Calculo  numerico</button></div>
                 <div><button type="button" class="btn btn-light" id="analisis3">Analisis III</button></div>
                 <div><button type="button" class="btn btn-light " id="prog2">Programacion II</button></div>
                 <div><button type="button" class="btn btn-light " id="bbdd1">Base De Datos</button></div>
                 <div><button type="button" class="btn btn-light " id="sisdig2">Sis. Digitales II</button></div>
-                <div><button type="button" class="btn btn-light " id="ch1">&nbsp;&nbsp;&nbsp;Ciencias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; humanas I</button></div>
+                <div><button type="button" class="btn btn-light " id="ch1">Ciencias humanas I</button></div>
 
             </div>
 
-            <div class="col-1 borde" id="sem4"><div>IV</div><hr>
+            <div class="col-1 borde" id="sem4"><div>Sem IV <br> (42)</div><hr>
                 <div><button type="button" class="btn btn-light" id="prob">Probabilidad y estadistica</button></div>
                 <div><button type="button" class=" btn btn-light " id="sislin"> Sistema Lineales</button></div>
                 <div><button type="button" class="btn btn-light " id="tic1" >TIC I</button></div>
@@ -102,17 +101,17 @@
                 <div><button type="button" class="btn btn-light " id="comProf">Comunicacion profesional</button></div>
 
             </div>
-            <div class="col-1 borde" id="sem5"><div>V</div><hr>
+            <div class="col-1 borde" id="sem5"><div>Sem V<br> (39)</div><hr>
                 <div><button type="button" class="btn btn-light" id="ivestOper">Investigacion Operativa</button></div>
-                <div><button type="button" class=" btn btn-light " id="electroMag">Electro-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; magnetismo</button></div>
+                <div><button type="button" class=" btn btn-light " id="electroMag">Electro-  magnetismo</button></div>
                 <div><button type="button" class=" btn btn-light " id="sislin2"> Sistema Lineales II</button></div>
-                <div><button type="button" class="btn btn-light " id="pasantia1">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional I</button></div>
+                <div><button type="button" class="btn btn-light " id="pasantia1">Practica   profesional I</button></div>
                 <div><button type="button" class="btn btn-light " id="sisop">Sistemas Operativos</button></div>
                 <div><button type="button" class="btn btn-light " id="tic2">TIC II</button></div>
                 <div><button type="button" class="btn btn-light "  id="contYcost">Contabiliidad y costos</button></div>
 
             </div>
-            <div class="col-1 borde" id="sem6"><div>VI</div><hr>
+            <div class="col-1 borde" id="sem6"><div>Sem VI<br> (42)</div><hr>
                 <div><button type="button" class="btn btn-light" id="muestreoypros">Muestreo y Procesamiento Digital</button></div>
                 <div><button type="button" class=" btn btn-light " id="medidaselectricas">Medidas e Instalaciones Electricas</button></div>
                 <div><button type="button" class="btn btn-light " id="ingsoft">Ingenieria De Software</button></div>
@@ -122,38 +121,38 @@
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet1">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem7"><div>VII</div><hr>
-                <div><button type="button" class="btn btn-light" id="gestCal">Gestion de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; calidad</button></div>
+            <div class="col-1 borde" id="sem7"><div>Sem VII<br> (40.5)</div><hr>
+                <div><button type="button" class="btn btn-light" id="gestCal">Gestion de  calidad</button></div>
                 <div><button type="button" class="btn btn-light " id="modsena">Modulacion de Señales</button></div>
                 <div><button type="button" class="btn btn-light " id="ondas">Ondas Electromagneticas</button></div>
                 <div><button type="button" class="btn btn-light " id="sisdis">Sistemas Distribuidos</button></div>
-                <div><button type="button" class="btn btn-light " id="pasantia2">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional II</button></div>
+                <div><button type="button" class="btn btn-light " id="pasantia2">Practica   profesional II</button></div>
                 <div><button type="button" class="btn btn-light " id="tic4">TIC IV</button></div>
                 <div><button type="button" class="btn btn-light " id="redes2">Redes de Datos II</button></div>
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet2">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem8"><div>VIII</div><hr>
+            <div class="col-1 borde" id="sem8"><div>Sem VIII<br> (37.5)</div><hr>
                 <div><button type="button" class="btn btn-light " id="Electronica">Electronica</button></div>
                 <div><button type="button" class="btn btn-light" id="sistrans">Sistemas de Transición</button></div>
                 <div><button type="button" class="btn btn-light " id="tic5">TIC V</button></div>
-                <div><button type="button" class="btn btn-light " id="ch2">&nbsp;&nbsp;&nbsp; Ciencias &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; humanas II</button></div>
+                <div><button type="button" class="btn btn-light " id="ch2"> Ciencias    humanas II</button></div>
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet3">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem9"><div>IX</div><hr>
+            <div class="col-1 borde" id="sem9"><div>Sem IX<br> (37.5)</div><hr>
 
-                <div><button type="button" class="btn btn-light " id="pasantia3">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional III</button></div>
+                <div><button type="button" class="btn btn-light " id="pasantia3">Practica   profesional III</button></div>
                 <div><button type="button" class="btn btn-light " id="tic6">TIC VI</button></div>
-                <div><button type="button" class="btn btn-light " id="proyInven">Proyecto de &nbsp;&nbsp;&nbsp; inversion</button></div>
+                <div><button type="button" class="btn btn-light " id="proyInven">Proyecto de  inversion</button></div>
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet4">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem10"><div>X</div><hr>
+            <div class="col-1 borde" id="sem10"><div>Sem X<br> (40.5)</div><hr>
                 <div><button type="button" class="btn btn-light" style="font-size: 11px" id="proyTel">Proyecto=Tel</button></div>
-                <div><button type="button" class=" btn btn-light " id="elemGestion">Elementos de &nbsp;&nbsp;&nbsp;&nbsp;gestion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;empresarial</button></div>
-                <div><button type="button" class="btn btn-light " id="gestiProy">&nbsp;&nbsp; Gestion de &nbsp;&nbsp;&nbsp;&nbsp;proyectos</button></div>
-                <div><button type="button" class="btn btn-light " id="etica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Etica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; profesional</button></div>
+                <div><button type="button" class=" btn btn-light " id="elemGestion">Elementos de gestion  empresarial</button></div>
+                <div><button type="button" class="btn btn-light " id="gestiProy"> Gestion de proyectos</button></div>
+                <div><button type="button" class="btn btn-light " id="etica"> Etica  profesional</button></div>
                 <!--       <div><button type="button" class="btn btn-light " id="cet5" style="font-size: 11px">CET/IDIOMAS/MLE</button></div>
                  -->      </div>
             <div class="container" id="conteinercets">
@@ -183,6 +182,17 @@
         </div>
     </div>
 </section>
+<div class="container genEspCom" >
+    <div class="row ">
+      <div class="col ">
+          
+          <button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
+          <button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
+          <button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
+        
+      </div>
+    </div>
+  </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

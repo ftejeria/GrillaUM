@@ -24,47 +24,46 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg overflow" style="overflow: inherit;">
-    <div class="container" >  <!-- me centra los elementos de la barra de nav-->
-        <a class="navbar-brand" href="#"><img src="images/logoum.png" class="logo-brand" alt="logo" ></a>
-
-        <h4 class="nombrejuego">&nbsp;&nbsp;&nbsp;&nbsp;Ingenieria Informatica</h4>
+    <nav class="navbar navbar-expand-lg overflow" id="backnavbarr">
+        <div class="container" id="centrarbarra" >  <!-- me centra los elementos de la barra de nav-->
+        
+        <a class="navbar-brand " href="#"><img src="http://fceecat.um.edu.uy/imgs/logo.png"  class="logo-brand" alt="logo" ></a>
+        <h4 class="nombrejuego">Ingenieria Informática</h4>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class = "icon ion-md-grid" > </i>
+        <i class = "icon ion-md-grid" > </i>  
         </button>
-
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <ul class="navbar-nav ml-auto" id="navbar">
-                <li class="nav-item ">
-                    <a class="nav-link" href="civil.html" id="boton1">Civil</a>
-                </li>
-                <li class="nav-item" >
-                    <a class="nav-link" href="index.html" id="boton2" >Industrial</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="Telematica.html" id="boton3">Telematica</a>
-                </li>
-                <li class="nav-item" style="border-radius: 25px;background-color: lightgrey" >
-                    <a class="nav-link" href="Informatica.html" id="boton4">Informatica</a>
-                </li>
-               
-            </ul>
+      
+          <ul class="navbar-nav ml-auto" id="navbar">
+            <li class="nav-item active">
+              <a class="nav-link" href="civil.html" id="boton1" >Civil</a>
+            </li>
+            <li class="nav-item"  >
+              <a class="nav-link" href="index.html" id="boton2" ; >Industrial</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="Telematica.html"  id="boton3">Telematica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Informatica.html " style="color: rgba(194, 113, 0, 1)" id="boton4">Informatica</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cienciaDatos.html" id="boton5">Ciencia de Datos</a>
+              </li>
+            
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+      </nav>
 
-<span class="container" id="backgfil">
-<button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
-<button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
-<button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
-</span>
 
 
 <section id="hero"  >
-    <div class="container" id="backg">
-        <div class="row" id="todos">
-            <div class="col-1 borde" id="sem1"><div>I</div><hr>
+    <div class="container-fluid" id="backg">
+        <div class="row justify-content-center" id="todos">
+            <div class="col-1 borde" id="sem1"><div>Sem I <br> (37.5)</div><hr>
                 <div><button type="button" class="btn btn-light" id="analisis1">Analisis I</button></div>
                 <div><button type="button" class="btn btn-light" id="gal1">GAL I</button></div>
                 <div><button type="button" class="btn btn-light" id="fisica1">Fisica I</button></div>
@@ -73,7 +72,7 @@
 
             </div>
 
-            <div class="col-1 borde" id="sem2"><div>II</div><hr>
+            <div class="col-1 borde" id="sem2"><div>Sem II <br> (37.5)</div><hr>
                 <div><button type="button" class="btn btn-light" id="analisis2">Analisis II</button></div>
                 <div><button type="button" class="btn btn-light" id="gal2">GAL II</button></div>
                 <div><button type="button" class="btn btn-light" id="logica">Logica</button></div>
@@ -82,7 +81,7 @@
 
             </div>
 
-            <div class="col-1 borde" id="sem3"><div>III</div><hr>
+            <div class="col-1 borde" id="sem3"><div>Sem III <br> (42)</div><hr>
                 <div><button type="button" class="btn btn-light" id="caluclo">&nbsp;&nbsp;&nbsp;&nbsp; Calculo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; numerico</button></div>
                 <div><button type="button" class="btn btn-light" id="matdis">Mat. Discreta</button></div>
                 <div><button type="button" class="btn btn-light " id="prog2">Programacion II</button></div>
@@ -92,7 +91,7 @@
 
             </div>
 
-            <div class="col-1 borde" id="sem4"><div>IV</div><hr>
+            <div class="col-1 borde" id="sem4"><div>Sem IV<br> (40.5)</div><hr>
                 <div><button type="button" class="btn btn-light" id="prob">Probabilidad y estadistica</button></div>
                 <div><button type="button" class=" btn btn-light " id="analgo"> Analisis De Algoritmo</button></div>
                 <div><button type="button" class="btn btn-light " id="tic1" >TIC I</button></div>
@@ -101,7 +100,7 @@
                 <div><button type="button" class="btn btn-light " id="comProf">Comunicacion profesional</button></div>
 
             </div>
-            <div class="col-1 borde" id="sem5"><div>V</div><hr>
+            <div class="col-1 borde" id="sem5"><div>Sem V <br> (39)</div><hr>
                 <div><button type="button" class="btn btn-light" id="ivestOper">Investigacion Operativa</button></div>
                 <div><button type="button" class=" btn btn-light " id="arqapp">Arquitectura De Aplicaciones</button></div>
                 <div><button type="button" class="btn btn-light " id="pasantia1">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional I</button></div>
@@ -110,7 +109,7 @@
                 <div><button type="button" class="btn btn-light "  id="contYcost">Contabiliidad y costos</button></div>
 
             </div>
-            <div class="col-1 borde" id="sem6"><div>VI</div><hr>
+            <div class="col-1 borde" id="sem6"><div>Sem VI<br> (39)</div><hr>
                 <div><button type="button" class="btn btn-light" id="teoComp">Teoria de la Computacion</button></div>
                 <div><button type="button" class=" btn btn-light " id="ivestOper2">Investigacion Operativa II</button></div>
                 <div><button type="button" class="btn btn-light " id="ingsoft">Ingenieria De Software</button></div>
@@ -120,7 +119,7 @@
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet1">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem7"><div>VII</div><hr>
+            <div class="col-1 borde" id="sem7"><div>Sem VII<br> (37.5)</div><hr>
                 <div><button type="button" class="btn btn-light" id="gestCal">Gestion de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; calidad</button></div>
                 <div><button type="button" class="btn btn-light " id="ingsoft2">Ingenieria De Software II</button></div>
                 <div><button type="button" class="btn btn-light " id="infrainfo">Infraestructura De Informatica</button></div>
@@ -131,14 +130,14 @@
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet2">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem8"><div>VIII</div><hr>
+            <div class="col-1 borde" id="sem8"><div>Sem VIII<br> (42)</div><hr>
                 <div><button type="button" class="btn btn-light" id="metoinv">Metodologia De Investigacion</button></div>
                 <div><button type="button" class="btn btn-light " id="tic5">TIC V</button></div>
                 <div><button type="button" class="btn btn-light " id="ch2">&nbsp;&nbsp;&nbsp; Ciencias &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; humanas II</button></div>
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet3">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem9"><div>IX</div><hr>
+            <div class="col-1 borde" id="sem9"><div>Sem IX<br> (42)</div><hr>
                 <div><button type="button" class="btn btn-light"  id="audicontrol">Auditoria y control</button></div>
                 <div><button type="button" class="btn btn-light " id="intelnegocios">Inteligencia de Negocios</button></div>
                 <div><button type="button" class="btn btn-light " id="pasantia3">Practica &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  profesional III</button></div>
@@ -147,7 +146,7 @@
                 <!--       <div><button type="button" class="btn btn-light " style="font-size: 11px" id="cet4">CET/IDIOMAS/MLE</button></div>
                  -->
             </div>
-            <div class="col-1 borde" id="sem10"><div>X</div><hr>
+            <div class="col-1 borde" id="sem10"><div>Sem X<br> (40.5)</div><hr>
                 <div><button type="button" class="btn btn-light" style="font-size: 11px" id="proyInf">Proyecto=INF</button></div>
                 <div><button type="button" class=" btn btn-light " id="elemGestion">Elementos de &nbsp;&nbsp;&nbsp;&nbsp;gestion &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;empresarial</button></div>
                 <div><button type="button" class="btn btn-light " id="gestiProy">&nbsp;&nbsp; Gestion de &nbsp;&nbsp;&nbsp;&nbsp;proyectos</button></div>
@@ -181,6 +180,17 @@
         </div>
     </div>
 </section>
+<div class="container genEspCom" >
+    <div class="row ">
+      <div class="col ">
+          
+          <button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
+          <button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
+          <button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
+        
+      </div>
+    </div>
+  </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
