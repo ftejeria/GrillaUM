@@ -254,7 +254,9 @@ body{
 margin-bottom: 0px;
 }
 
-	
+hr{
+	background-color: rgba(194, 113, 0, 1);
+}
 
 .navbar.toggler{font-size: 40px}
 .navbar.toggler:focus{outline: none}
@@ -289,10 +291,10 @@ p{
 }
 .btn-light{
 	margin-bottom: 10px;
-	width: 100px;
-	height: 70px;
-	font-size: 12px;
-	word-break: break-all;
+	width: 130px;
+	height: 90px;
+	font-size: 14px;
+	
 	
 }
 
@@ -362,7 +364,7 @@ p{
 .btn-light{
 	background-color: rgb(204, 204, 204);
 	width: 140px;
-	height: 60px;
+	height: fit-content;
 }
 
 

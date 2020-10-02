@@ -2574,7 +2574,7 @@ let materiasinf=[
 ];
 let materiasCienciaDatos=[
     {
-    "id": "CalculoBasico",
+    "id": "Calculo Basico",
     "hijo": [],
         "cat": "E",
         "nombre":"",
@@ -2596,7 +2596,7 @@ let materiasCienciaDatos=[
         "descripcion":""
     },
     {
-    "id": "PrincipiosDeAdministracion",
+    "id": "Principios De Administracion",
     "hijo": [],
         "cat": "G",
         "nombre":"",
@@ -2607,7 +2607,7 @@ let materiasCienciaDatos=[
         "descripcion":""
     },
     {
-    "id": "ComunicacionProfesional",
+    "id": "Comunicacion Profesional",
     "hijo": [],
         "cat": "G",
         "nombre":"",
@@ -2618,7 +2618,7 @@ let materiasCienciaDatos=[
         "descripcion":""
     },
     {
-    "id": "IntroduccionAnaliticaEmpresarial",
+    "id": "Introduccion Analitica Empresarial",
     "hijo": [],
         "cat": "E",
         "nombre":"",
@@ -2641,7 +2641,7 @@ let materiasCienciaDatos=[
     },
      {
     "id": "Calculo",
-    "hijo": [],
+    "hijo": ["Calculo Basico"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2685,7 +2685,7 @@ let materiasCienciaDatos=[
     },//SEM3
      {
     "id": "Diseño de base de datos 1",
-    "hijo": [],
+    "hijo": ["Programacion Analitica"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2696,7 +2696,7 @@ let materiasCienciaDatos=[
     },
      {
     "id": "Análisis Financiero Internacional",
-    "hijo": [],
+    "hijo": ["Introduccion a la Contabilidad"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2707,7 +2707,7 @@ let materiasCienciaDatos=[
     },
      {
     "id": "Probabilidad",
-    "hijo": [],
+    "hijo": ["Calculo"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2729,7 +2729,7 @@ let materiasCienciaDatos=[
     },//SEM4
      {
     "id": "Estadística I",
-    "hijo": [],
+    "hijo": ["Probabilidad"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2751,7 +2751,7 @@ let materiasCienciaDatos=[
     },
      {
     "id": "Inteligencia de Negocios",
-    "hijo": [],
+    "hijo": ["Diseño de base de datos 1"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2784,7 +2784,7 @@ let materiasCienciaDatos=[
     },//SEM5
      {
     "id": "Estadística II",
-    "hijo": [],
+    "hijo": ["Probabilidad"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2795,7 +2795,7 @@ let materiasCienciaDatos=[
     },
      {
     "id": "Investigación operativa I",
-    "hijo": [],
+    "hijo": ["Probabilidad","Estadística I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2817,7 +2817,7 @@ let materiasCienciaDatos=[
     },
      {
     "id": "Aprendizaje Automático",
-    "hijo": [],
+    "hijo": ["Programacion Analitica"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2828,7 +2828,7 @@ let materiasCienciaDatos=[
     },
      {
     "id": "Investigación de mercado",
-    "hijo": [],
+    "hijo": ["Práctica Profesional I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2850,7 +2850,7 @@ let materiasCienciaDatos=[
     },
     {
     "id": "Finanzas I",
-    "hijo": [],
+    "hijo": ["Matemática Financiera"],
         "cat": "G",
         "nombre":"",
         "profesor":"",
@@ -2861,7 +2861,7 @@ let materiasCienciaDatos=[
     },
     {
     "id": "Econometría I",
-    "hijo": [],
+    "hijo": ["Estadística II","Algebra"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2883,7 +2883,7 @@ let materiasCienciaDatos=[
     },
     {
     "id": "Gestión de sistemas de información",
-    "hijo": [],
+    "hijo": ["Introduccion Analitica Empresarial"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -2894,7 +2894,7 @@ let materiasCienciaDatos=[
     },//SEM7
     {
     "id": "Ética Profesional II",
-    "hijo": [],
+    "hijo": ["Ética Profesional I"],
         "cat": "G",
         "nombre":"",
         "profesor":"",
@@ -2927,7 +2927,7 @@ let materiasCienciaDatos=[
     },
     {
     "id": "Contabilidad de Gestión",
-    "hijo": [],
+    "hijo": ["Introduccion a la Contabilidad"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
@@ -3091,10 +3091,11 @@ function filtro(id){
             document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.2rem rgba(255,231,130,0.5)";
 
         }
-       else if(!materias[i].cat !== a){
+        else if(!materias[i].cat !== a){
             document.getElementById(materias[i].id).style.backgroundColor = "rgb(204, 204, 204)";
             document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.0rem rgba(216,217,219,0.0)";
         }
+      
 
         }
         else if (id=="todo") {
@@ -3125,6 +3126,7 @@ if(!isfiltred){
                     document.getElementById(materias[i].hijo[j]).style.backgroundColor = "rgba(255,99,71,0.5)";
                     document.getElementById(materias[i].hijo[j]).style.boxShadow = "0px 0px 0px 0.2rem rgba(220,20,60,0.5)";
                 }
+             
             }
         }
     }
