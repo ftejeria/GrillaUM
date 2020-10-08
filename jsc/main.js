@@ -1,20 +1,8 @@
 //E = ESPECIFICA; C = COMPARTIDA; G = GENERAL
-
-
-let materiastel=[
-    {
-        "id": "analisis2",
-        "hijo": ["analisis1"],
-        "cat": "G",
-        "nombre":"Analisis II",
-        "profesor":"Pepe Díaz Milesi",
-        "creditos":"9",
-        "semestre":"II",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "analisis1",
+let materiasGenerales=[
+     //sem1
+     {
+        "id": "Análisis Matemático I",
         "hijo": [],
         "cat": "G",
         "nombre":"Analisis I",
@@ -25,7 +13,7 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "gal1",//falta datos exoneracion
+        "id": "Geometría y Álgebra Lineal I",//falta datos exoneracion
         "hijo": [],
         "cat": "G",
         "nombre":"Geometría y Álgebra Lineal I",
@@ -36,7 +24,7 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "fisica1",//falta datos exoneracion
+        "id": "Física I",//falta datos exoneracion
         "hijo": [],
         "cat": "G",
         "nombre":"Física I",
@@ -47,7 +35,7 @@ let materiastel=[
         "descripcion":"Se exonera totalmente con nota 10"
     },
     {
-        "id": "intRob",
+        "id": "Introducción a la Robótica",
         "hijo": [],
         "cat": "G",
         "nombre":"Introducción a la Robótica",
@@ -58,7 +46,7 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "intIng",
+        "id": "Introducción a la Ingeniería",
         "hijo": [],
         "cat": "G",
         "nombre":"Introducción a la Ingeniería",
@@ -68,9 +56,21 @@ let materiastel=[
         "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    //sem2
     {
-        "id": "gal2",
-        "hijo": ["gal1"],
+        "id": "Análisis Matemático II",
+        "hijo": ["Análisis Matemático I"],
+        "cat": "G",
+        "nombre":"Analisis II",
+        "profesor":"Pepe Díaz Milesi",
+        "creditos":"9",
+        "semestre":"II",
+        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+    {
+        "id": "Geometría y algebra lineal II",
+        "hijo": ["Geometría y Álgebra Lineal I"],
         "cat": "G",
         "nombre":"Geometría y Álgebra Lineal I",
         "profesor":"Alfredo Piria",
@@ -80,46 +80,10 @@ let materiastel=[
         "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    //sem3
     {
-        "id": "fisica2",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Física II",
-        "profesor":"Juan Pablo Fossati",
-        "creditos":"7,5",
-        "semestre":"II",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "sisdig1",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Sistemas Digitales",
-        "profesor":"Andres Merello",
-        "creditos":"6",
-        "semestre":"II",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "prog1",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Pogramación  I",
-        "profesor":"Daniel Pereda",
-        "creditos":"7,5",
-        "semestre":"II",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
- 
-     {
-        "id": "caluclo",//calculo?
-        "hijo": ["analisis2", "gal2"],
+        "id": "Cálculo Numérico",
+        "hijo": ["Análisis Matemático II", "Geometría y algebra lineal II"],
         "cat": "G",
         "nombre":"Cálculo Numérico",
         "profesor":"Maximiliano Stock",//falta
@@ -129,55 +93,7 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "analisis3",
-        "hijo": ["analisis2", "gal2"],
-        "cat": "C",
-        "nombre":"Análisis Matemático III ",
-        "profesor":"José Díaz Milesi ",
-        "creditos":"9",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "prog2",
-        "hijo": ["prog1"],
-        "cat": "C",
-        "nombre":"Programacion II",
-        "profesor":"Daniel Pereda",
-        "creditos":"7,5",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre pimar",
-        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "bbdd1",
-        "hijo": ["prog1"],
-        "cat": "C",
-        "nombre":"Intoduccion a Base de Datos",
-        "profesor":"Javier Pereira",
-        "creditos":"7,5",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "sisdig2",
-        "hijo": ["sisdig1"],
-        "cat": "C",
-        "nombre":"Sistemas Digitales II",
-        "profesor":"Andres Merello",
-        "creditos":"/,5",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No se exonera",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ch1",
+        "id": "Ciencias Humanas I",
         "hijo": [],
         "cat": "G",
         "nombre":"Ciencias Humanas 1",
@@ -187,10 +103,10 @@ let materiastel=[
         "dicta":"Se dicta en semestre par",
         "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
-    },
+    },//sem4
     {
-        "id": "prob",
-        "hijo": ["analisis2"],
+        "id": "Probabilidad y Estaidstica",
+        "hijo": ["Análisis Matemático II"],
         "cat": "G",
         "nombre":"Probabilidad y Estaidstica",
         "profesor":"Pepe Diaz",
@@ -201,43 +117,7 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "sislin",
-        "hijo": ["analisis3"],
-        "cat": "E",
-        "nombre":"Sistemas Lineales",
-        "profesor":"Hueso Abreu",
-        "creditos":"7,5",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "bbdd2",
-        "hijo": ["bbdd1"],
-        "cat": "C",
-        "nombre":"Introducion a Base de Datos II",
-        "profesor":"Javier Pereira",
-        "creditos":"7,5",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic1",
-        "hijo": ["prog2"],
-        "cat": "C",
-        "nombre":"Laboratirio TIC I",
-        "profesor":"Daniel Pereda",
-        "creditos":"6",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "eco",
+        "id": "Economía",
         "hijo": [],
         "cat": "G",
         "nombre":"Economía",
@@ -249,7 +129,7 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "comProf",
+        "id": "Cominacion Profesional",
         "hijo": [],
         "cat": "G",
         "nombre":"Cominacion Profesional",
@@ -259,10 +139,11 @@ let materiastel=[
         "dicta":"Se dicta en semestre par",
         "exonerable":"Se exonera con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
-    },
+    },//sem5
+
     {
-        "id": "ivestOper",
-        "hijo": ["prob"],
+        "id": "Investigacion Operativa I",
+        "hijo": ["Probabilidad y Estaidstica"],
         "cat": "G",
         "nombre":"Investigacion Operativa I",
         "profesor":"Claudio Ruibal",
@@ -273,138 +154,31 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "electroMag",//faltan datos de exoneracion
-        "hijo": ["fisica2", "analisis3"],
-        "cat": "C",
-        "nombre":"Electromagnetismo",
-        "profesor":"Gerardo Beltrame",
-        "creditos":"7,5",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "sislin2",
-        "hijo": ["sislin","fisica2"],
-        "cat": "E",
-        "nombre":"Sistemas Lineales",
-        "profesor":"Marcelo Abreu",
-        "creditos":"7,5",
-        "semestre":"V",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "pasantia1",
+        "id": "Práctica profesional 1",
         "hijo": [],
         "cat": "G",
-        "nombre":"Pasantia 1",
+        "nombre":"Práctica profesional 1",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"1",
+        "semestre":"IV",
         "dicta":"Se dicta en semestre impar",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "sisop",
-        "hijo": ["sisdig2"],
-        "cat": "C",
-        "nombre":"Sistemas Operativos",
-        "profesor":"Gerardo Quincke",
-        "creditos":"6",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic2",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"Analía Conde",
-        "creditos":"6",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "contYcost",
+        "id": "Contabilidad y costos",
         "hijo": [],
         "cat": "G",
-        "nombre":"Contabilidad Y costao",
+        "nombre":"Contabilidad y costos",
         "profesor":"Guillermo Rouks",
-        "creditos":"&",
+        "creditos":"6",
         "semestre":"V",
         "dicta":"Se dicta en semestre ipar",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":"Se exonera con nota 8"
-    },    {
-        "id": "medidaselectricas",
-        "hijo": ["electroMag"],
-        "cat": "C",
-        "nombre":"Medidas e Instalaciones Eléctricas ",
-        "profesor":"Andrés Merello ",
-        "creditos":"7,5",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+    },//sem6
     {
-        "id": "muestreoypros",
-        "hijo": ["sislin"],
-        "cat": "E",
-        "nombre":"Muestreo y Procesamiento Digital",
-        "profesor":"Juan Piaggio",
-        "creditos":"7,5",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-
-    {
-        "id": "ingsoft",
-        "hijo": ["tic1"],
-        "cat": "C",
-        "nombre":"Ingenieria de Sofware",
-        "profesor":"Juan Pablo Núñez",
-        "creditos":"6",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "redes1",
-        "hijo": ["sisdig2", "pasantia1"],
-        "cat": "C",
-        "nombre":"Redes de Datos I",
-        "profesor":"Gustavo Compagnone",
-        "creditos":"6",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic3",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Laboratorio TIC III",
-        "profesor":"Analía Conde",
-        "creditos":"6",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "teologia",
+        "id": "Cuestion de Teología",
         "hijo": [],
         "cat": "G",
         "nombre":"Cuestion de Teología",
@@ -414,9 +188,9 @@ let materiastel=[
         "dicta":"Se dicta en semestre par",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
-    },
+    },//sem7
     {
-        "id": "gestCal",
+        "id": "Gestión de Calidad",
         "hijo": [],
         "cat": "G",
         "nombre":"Gestión de Calidad",
@@ -428,32 +202,394 @@ let materiastel=[
         "descripcion":""
     },
     {
-        "id": "modsena",
-        "hijo": ["sislin"],
-        "cat": "E",
-        "nombre":"Modulación de Señales",
-        "profesor":"Diego Durán",
-        "creditos":"7,5",
+        "id": "Práctica profesional 2",
+        "hijo": [],
+        "cat": "G",
+        "nombre":"Práctica profesional 2",
+        "profesor":"",
+        "creditos":"0",
         "semestre":"VII",
-        "deicta":"Se dicta en semestre impar",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },//sem8
+    {
+        "id": "Ciencias Humanas II",
+        "hijo": [],
+        "cat": "G",
+        "nombre":"Ciencias Humanas II",
+        "profesor":"Silvia Facal",
+        "creditos":"4,5",
+        "semestre":"VIII",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },//sem9
+    {
+        "id": "Proyectos de Inversión",
+        "hijo": ["Contabilidad y costos"],
+        "cat": "G",
+        "nombre":"Proyectos de Inversión",
+        "profesor":"Marcos Rey",
+        "creditos":"4,5",
+        "semestre":"IX",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"No se exonera",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+    {
+        "id": "Práctica profesional 3",
+        "hijo": [],
+        "cat": "G",
+        "nombre":"Práctica profesional 3",
+        "profesor":"",
+        "creditos":"0",
+        "semestre":"IX",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },//sem10
+    {
+        "id": "Elementos de Gestión Empresarial",
+        "hijo": ["Economía"],
+        "cat": "G",
+        "nombre":"Elementos de Gestión Empresarial ",
+        "profesor":"Fernando Requena ",
+        "creditos":"6",
+        "semestre":"X",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+
+    },
+    {
+        "id": "Gestión de Proyecto",
+        "hijo": ["Proyectos de Inversión"],
+        "cat": "G",
+        "nombre":"Gestión de Proyectos",
+        "profesor":"Viviana Rocco",  //skere
+        "creditos":"4,5",
+        "semestre":"X",
         "dicta":"Se dicta en semestre par",
         "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "ondas",
-        "hijo": ["electroMag"],
-        "cat": "E",
-        "nombre":"Ondas Electromagneticas",
-        "profesor":"Gerardo Beltrame",
+        "id": "Ética Profesional",
+        "hijo": [],
+        "cat": "G",
+        "nombre":"Ética Profesional",
+        "profesor":"Juan Carlos Carrasco, Manuel Vega Utrera",
         "creditos":"6",
-        "semestre":"VII",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "semestre":"X",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
+    }
+
+]
+ matericasComunes=[
+     //sem2
+   
+    {
+        "id": "Física II",
+        "hijo": [],
+        "cat": "C",
+        "nombre":"Física II",
+        "profesor":"Juan Pablo Fossati",
+        "creditos":"7,5",
+        "semestre":"II",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera totalmente con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","ind","civ"]
     },
     {
-        "id": "sisdis",
+        "id": "Matlab",//falta
+        "hijo": [],
+        "cat": "C",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"II",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["ind","civ"]
+    },
+
+    {
+        "id": "Fundamentos Químicos de la Ingeniería",//nose si esta bien lo de exonerable
+        "hijo": [],
+        "cat": "C",
+        "nombre":"Fundamentos Químicos de la Ingeniería",
+        "profesor":"Laura Luzuriaga",
+        "creditos":"6",
+        "semestre":"II",
+        "exonerable":"no es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["ind","civ"]
+    },
+    {
+        "id": "Programación I",
+        "hijo": [],
+        "cat": "C",
+        "nombre":"Pogramación  I",
+        "profesor":"Daniel Pereda",
+        "creditos":"7,5",
+        "semestre":"II",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    {
+        "id": "Sistemas Digitales I",
+        "hijo": [],
+        "cat": "C",
+        "nombre":"Sistemas Digitales",
+        "profesor":"Andres Merello",
+        "creditos":"6",
+        "semestre":"II",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    //sem3
+    {
+        "id": "Análisis Matemático III",
+        "hijo": ["Análisis Matemático II", "Geometría y algebra lineal II"],
+        "cat": "C",
+        "nombre":"Análisis Matemático III ",
+        "profesor":"José Díaz Milesi ",
+        "creditos":"9",
+        "semestre":"III",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","ind","civ"]
+    },
+    {
+        "id": "Mecánica I ",//error en doc
+        "hijo": ["Física I", "Análisis Matemático I"],
+        "cat": "C",
+        "nombre":"Mecánica I",
+        "profesor":"",
+        "creditos":"7,5",
+        "semestre":"III",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["ind","civ"]
+    },
+    {
+        "id": "Laboratorio CAD",
+        "hijo": [],
+        "cat": "C",
+        "nombre":"Laboratorio Laboratorio CAD",
+        "profesor":"Daniel Larnaudie",
+        "creditos":"6",
+        "semestre":"III",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["ind","civ"]
+    },
+    {
+        "id": "Programación II",
+        "hijo": ["Programación I"],
+        "cat": "C",
+        "nombre":"Programacion II",
+        "profesor":"Daniel Pereda",
+        "creditos":"7,5",
+        "semestre":"III",
+        "dicta":"Se dicta en semestre pimar",
+        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },//sem3
+    {
+        "id": "Diseño de Base de Datos I",
+        "hijo": ["Programación I"],
+        "cat": "C",
+        "nombre":"Intoduccion a Base de Datos",
+        "profesor":"Javier Pereira",
+        "creditos":"7,5",
+        "semestre":"III",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+     
+    {
+        "id": "Sistemas Digitales II",
+        "hijo": ["Sistemas Digitales I"],
+        "cat": "C",
+        "nombre":"Sistemas Digitales II",
+        "profesor":"Andres Merello",
+        "creditos":"7,5",
+        "semestre":"III",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"No se exonera",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    //sem4
+    {
+        "id": "Diseño de Base de Datos II",
+        "hijo": ["Diseño de Base de Datos I"],
+        "cat": "C",
+        "nombre":"Introducion a Base de Datos II",
+        "profesor":"Javier Pereira",
+        "creditos":"7,5",
+        "semestre":"IV",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    {
+        "id": "Mecánica II",
+        "hijo": ["Mecánica I "],
+        "cat": "C",
+        "nombre":"Mecánica II",
+        "profesor":"Carlos Brun",
+        "creditos":"7,5",
+        "semestre":"IV",
+        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["civ","ind"]
+    },
+    {
+        "id": "Resistencia de  materiales I ",
+        "hijo": ["Mecánica I "],
+        "cat": "C",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"IV",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["civ","ind"]
+    },
+    
+    {
+        "id": "Laboratirio TIC I",
+        "hijo": ["Programación II"],
+        "cat": "C",
+        "nombre":"Laboratirio TIC I",
+        "profesor":"Daniel Pereda",
+        "creditos":"6",
+        "semestre":"IV",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },//sem5
+    {
+        "id": "Sistemas Operativos",
+        "hijo": ["Sistemas Digitales II"],
+        "cat": "C",
+        "nombre":"Sistemas Operativos",
+        "profesor":"Gerardo Quincke",
+        "creditos":"6",
+        "semestre":"V",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    {
+        "id": "Resistencia de materiales II ",
+        "hijo": ["Resistencia de materiales I"],
+        "cat": "C",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"V",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["civ","ind"]
+    },
+    {
+        "id": "Ciencia e Ingeniería de materiales",
+        "hijo": ["Fundamentos Químicos de la Ingeniería"],
+        "cat": "C",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"V",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["civ","ind"]
+    },
+    {
+        "id": "Laboratorio TIC II",
+        "hijo": [],
+        "cat": "C",
+        "nombre":"",
+        "profesor":"Gerardo Quincke",
+        "creditos":"6",
+        "semestre":"V",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    {
+        "id": "Electromagnetismo",//faltan datos de exoneracion
+        "hijo": ["Física II", "Análisis Matemático III"],
+        "cat": "C",
+        "nombre":"Electromagnetismo",
+        "profesor":"Gerardo Beltrame",
+        "creditos":"7,5",
+        "semestre":"V",
+        "dicta":"Se dicta en semestre impar",
+        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","ind"]
+    }, //sem6
+    {
+        "id": "Redes de Datos I",
+        "hijo": ["Sistemas Digitales II", "Práctica profesional1"],
+        "cat": "C",
+        "nombre":"Redes de Datos I",
+        "profesor":"Gustavo Compagnone",
+        "creditos":"6",
+        "semestre":"VI",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    {
+        "id": "Ingenieria de Sofware I",
+        "hijo": ["Laboratirio TIC I"],
+        "cat": "C",
+        "nombre":"Ingenieria de Sofware",
+        "profesor":"Juan Pablo Núñez",
+        "creditos":"6",
+        "semestre":"VI",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+    {
+    "id": "Laboratorio TIC III",
+    "hijo": [],
+    "cat": "C",
+    "nombre":"Laboratorio TIC III",
+    "profesor":"Analía Conde",
+    "creditos":"6",
+    "semestre":"VI",
+    "dicta":"Se dicta en semestre par",
+    "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":"",
+    "carreras":["tel","inf"]
+    },
+      //sem7
+      {
+        "id": "Sistemas Distribuidos",
         "hijo": ["redes1"],
         "cat": "C",
         "nombre":"Sistemas Distribuidos",
@@ -462,36 +598,23 @@ let materiastel=[
         "semestre":"VII",
         "dicta":"Se dicta en semestre impar",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":"No es exonerable"
+        "descripcion":"No es exonerable",
+        "carreras":["tel","inf"]
     },
     {
-        "id": "redes2",
-        "hijo": ["redes1"],
+        "id": "Ingeniería Ambiental ",
+        "hijo": [],
         "cat": "C",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "dicta":"Se dicta en semestre par",
+        "creditos":"4.5",
+        "semestre":"VII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
+        "descripcion":"",
+        "carreras":["civ","ind"]
     },
-    {
-        "id": "pasantia2",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-
-
-    {
-        "id": "tic4",
+     {
+        "id": "Laboratorio TIC IV",
         "hijo": [],
         "cat": "C",
         "nombre":"Laboratorio TIC IV",
@@ -500,7 +623,21 @@ let materiastel=[
         "semestre":"VII",
         "dicta":"Se dicta en semestre impar",
         "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },//SEM8
+    {
+        "id": "Laboratorio TIC V",
+        "hijo": [],
+        "cat": "C",
+        "nombre":"Laboratorio TIC V",
+        "profesor":"Diego Durán",
+        "creditos":"6",
+        "semestre":"VIII",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
     },
     {
         "id": "Electronica",
@@ -513,60 +650,11 @@ let materiastel=[
         "dicta":"Se dicta en semestre par",
         "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
-    },
-
-
+        ,
+        "carreras":["tel","ind"]
+    },//SEM9
     {
-        "id": "sistrans",
-        "hijo": ["pasantia2","ondas"],
-        "cat": "E",
-        "nombre":"Sistemas de Transmisión",
-        "profesor":"Rafael Sotelo",
-        "creditos":"6",
-        "semestre":"VIII",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerale",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic5",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Laboratorio TIC V",
-        "profesor":"Diego Durán",
-        "creditos":"6",
-        "semestre":"VIII",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ch2",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Ciencias Humanas II",
-        "profesor":"Silvia Facal",
-        "creditos":"4,5",
-        "semestre":"VIII",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-
-    {
-        "id": "pasantia3",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic6",
+        "id": "Laboratorio TIC VI",
         "hijo": [],
         "cat": "C",
         "nombre":"Laboratorio TIC VI",
@@ -575,21 +663,114 @@ let materiastel=[
         "semestre":"IX",
         "dicta":"Se dicta en semestre par",
         "exonerable":"Se exonera con nota -",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":"",
+        "carreras":["tel","inf"]
+    },
+ ]
+
+ let materiasEspecificasTel=[
+     //sem4
+    
+    {
+        "id": "Sistemas Lineales I ",
+        "hijo": ["Análisis Matemático III"],
+        "cat": "E",
+        "nombre":"Sistemas Lineales",
+        "profesor":"Hueso Abreu",
+        "creditos":"7,5",
+        "semestre":"IV",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },//sem5
+
+    {
+        "id": "Sistemas Lineales II",
+        "hijo": ["Sistemas Lineales I ","Física II"],
+        "cat": "E",
+        "nombre":"Sistemas Lineales",
+        "profesor":"Marcelo Abreu",
+        "creditos":"7,5",
+        "semestre":"V",
+        "exonerable":"Se exonerea parcialmente,el practico,con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+     //sem6
+     {
+        "id": "Muestreo y Procesamiento Digital",
+        "hijo": ["Sistemas Lineales I "],
+        "cat": "E",
+        "nombre":"Muestreo y Procesamiento Digital",
+        "profesor":"Juan Piaggio",
+        "creditos":"7,5",
+        "semestre":"VI",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "proyInven",
-        "hijo": ["contYcost"],
-        "cat": "G",
-        "nombre":"Proyectos de Inversión",
-        "profesor":"Marcos Rey",
-        "creditos":"4,5",
-        "semestre":"IX",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No se exonera",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "id": "Medidas e Instalaciones Eléctricas",
+        "hijo": ["Electromagnetismo"],
+        "cat": "C",
+        "nombre":"Medidas e Instalaciones Eléctricas ",
+        "profesor":"Andrés Merello ",
+        "creditos":"7,5",
+        "semestre":"VI",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },//SEM7
+    {
+        "id": "Modulación de Señales",
+        "hijo": ["Sistemas Lineales I "],
+        "cat": "E",
+        "nombre":"Modulación de Señales",
+        "profesor":"Diego Durán",
+        "creditos":"7,5",
+        "semestre":"VII",
+        "deicta":"Se dicta en semestre impar",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-
+    
+    {
+        "id": "Redes de Datos II ",
+        "hijo": ["Redes de Datos I"],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"VII",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+    {
+        "id": "Ondas Electromagnéticas",
+        "hijo": ["Electromagnetismo"],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"VII",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },//SEM8
+    {
+        "id": "Sistemas de Transmisión",
+        "hijo": ["Práctica Profesional 2","Ondas Electromagnéticas"],
+        "cat": "E",
+        "nombre":"Sistemas de Transmisión",
+        "profesor":"Rafael Sotelo",
+        "creditos":"6",
+        "semestre":"VIII",
+        "dicta":"Se dicta en semestre par",
+        "exonerable":"No es exonerale",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },//SEM10
+    
     {
         "id": "proyTel",
         "hijo": ["sistrans", "Electronica","ingsoft"],
@@ -602,212 +783,213 @@ let materiastel=[
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "elemGestion",
-        "hijo": ["eco"],
-        "cat": "G",
-        "nombre":"Elementos de Gestión Empresarial ",
-        "profesor":"Fernando Requena ",
-        "creditos":"6",
-        "semestre":"X",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+];
+    //cets
+let cetTel=[  {
+        "id": "CET/IDIOMAS/MLE 1",
+        "hijo": [""],
+        "creditos":"4.5",
+        "nombre":"CET/IDIOMAS/MLE ",
+        "semestre":"IV",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
+    },
+    {
+        "id": "CET/IDIOMAS/MLE 2 ",
+        "nombre":"CET/IDIOMAS/MLE ",
+        "hijo": [""],
+        "creditos":"4.5",
+        "semestre":"VI",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+    {
+        "id": "CET/IDIOMAS/MLE 3 ",
+        "hijo": [""],
+        "creditos":"4.5",
+        "nombre":"CET/IDIOMAS/MLE ",
+        "semestre":"VII",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+    {
+        "id": "CET/IDIOMAS/MLE 4",
+        "hijo": [""],
+        "creditos":"13.5",
+        "nombre":"CET/IDIOMAS/MLE ",
+        "semestre":"VIII",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+    {
+        "id": "CET/IDIOMAS/MLE 5",
+        "hijo": [""],
+        "nombre":"CET/IDIOMAS/MLE ",
+        "creditos":"27",
+        "semestre":"IX",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+  
+ ];
+ let cetInf=[  {
+    "id": "CET/IDIOMAS/MLE 1",
+    "hijo": [""],
+    "creditos":"4.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"IV",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 2 ",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "hijo": [""],
+    "creditos":"9",
+    "semestre":"V",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 3 ",
+    "hijo": [""],
+    "creditos":"4.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"VI",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 4",
+    "hijo": [""],
+    "creditos":"4.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"VII",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 5",
+    "hijo": [""],
+    "nombre":"CET/IDIOMAS/MLE ",
+    "creditos":"27",
+    "semestre":"VIII",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 6",
+    "hijo": [""],
+    "nombre":"CET/IDIOMAS/MLE ",
+    "creditos":"13.5",
+    "semestre":"IX",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+];
+let cetCiv=[  {
+    "id": "CET/IDIOMAS/MLE 1",
+    "hijo": [""],
+    "creditos":"4.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"VI",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 2 ",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "hijo": [""],
+    "creditos":"13.5",
+    "semestre":"VII",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 3 ",
+    "hijo": [""],
+    "creditos":"13.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"VIII",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 4",
+    "hijo": [""],
+    "creditos":"13.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"IX",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 5",
+    "hijo": [""],
+    "nombre":"CET/IDIOMAS/MLE ",
+    "creditos":"3",
+    "semestre":"X",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
 
-    },
-    {
-        "id": "gestiProy",
-        "hijo": ["proyInven"],
-        "cat": "G",
-        "nombre":"Gestión de Proyectos",
-        "profesor":"Viviana Rocco",  //skere
-        "creditos":"4,5",
-        "semestre":"X",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "etica",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Ética Profesional",
-        "profesor":"Juan Carlos Carrasco, Manuel Vega Utrera",
-        "creditos":"6",
-        "semestre":"X",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "cets",
-        "hijo": [],
-        "cat": "",
-        "nombre":"CETS/IDIOMAS/MLE",
-        "creditos":"18",
-        "descripcion":""
-    }
+];
+let cetInd=[  {
+    "id": "CET/IDIOMAS/MLE 1",
+    "hijo": [""],
+    "creditos":"9",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"VI",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 2 ",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "hijo": [""],
+    "creditos":"7.5",
+    "semestre":"VII",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 3 ",
+    "hijo": [""],
+    "creditos":"10.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"VIII",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 4",
+    "hijo": [""],
+    "creditos":"16.5",
+    "nombre":"CET/IDIOMAS/MLE ",
+    "semestre":"IX",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+{
+    "id": "CET/IDIOMAS/MLE 5",
+    "hijo": [""],
+    "nombre":"CET/IDIOMAS/MLE ",
+    "creditos":"4.5",
+    "semestre":"X",
+    "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    "descripcion":""
+},
+
 ];
 
-let materiasciv = [
-    {
-        "id": "analisis2",
-        "hijo": ["analisis1"],
-        "cat": "G",
-        "nombre":"Analisis II",
-        "profesor":"Pepe Díaz Milesi",
-        "creditos":"9",
-        "semestre":"II",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "analisis1",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Analisis I",
-        "profesor":"José Díaz Milesi",
-        "creditos":"9",
-        "semestre":"I",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "gal1",//falta datos exoneracion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Geometría y Álgebra Lineal I",
-        "profesor":"Alfredo Piria",
-        "creditos":"9",
-        "semestre":"I",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "fisica1",//falta datos exoneracion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Física I",
-        "profesor":"Juan Pablo Fossati",
-        "creditos":"7,5",
-        "semestre":"I",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "intRob",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Introducción a la Robótica",
-        "profesor":"Gustavo Compagnone",//esto esta mal
-        "creditos":"6",
-        "semestre":"I",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "intIng",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Introducción a la Ingeniería",
-        "profesor":"Adrián Santilli",
-        "creditos":"6",
-        "semestre":"I",
-        "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "gal2",
-        "hijo": ["gal1"],
-        "cat": "G",
-        "nombre":"Geometría y algebra lineal II",
-        "profesor":"Alfredo Piria",
-        "creditos":"9",
-        "semestre":"II",
-        "exonerable":"se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "fisica2",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Física II",
-        "profesor":"Juan Pablo Fossati",
-        "creditos":"7,5",
-        "semestre":"II",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "matlab",//falta
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+
+let materiasEspCiv = [
+    
+
 
     {
-        "id": "funQui",//nose si esta bien lo de exonerable
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Fundamentos Químicos de la Ingeniería",
-        "profesor":"Laura Luzuriaga",
-        "creditos":"6",
-        "semestre":"II",
-        "exonerable":"no es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "caluclo",//calculo?
-        "hijo": ["analisis2", "gal2"],
-        "cat": "G",
-        "nombre":"Cálculo Numérico",
-        "profesor":"Maximiliano Stock",//falta
-        "creditos":"6",
-        "semestre":"III",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "analisis3",
-        "hijo": ["analisis2", "gal2"],
-        "cat": "C",
-        "nombre":"Análisis Matemático III ",
-        "profesor":"José Díaz Milesi ",
-        "creditos":"9",
-        "semestre":"III",
-        "exonerable":"se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "mecanica1",//error en doc
-        "hijo": ["fisica1", "analisis1"],
-        "cat": "C",
-        "nombre":"Mecánica I",
-        "profesor":"",
-        "creditos":"7,5",
-        "semestre":"III",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "cad",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Laboratorio CAD",
-        "profesor":"Daniel Larnaudie",
-        "creditos":"6",
-        "semestre":"III",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "itnrotermo",//falta
-        "hijo": ["analisis1"],
+        "id": "Introducción a la Termodinámica (",//falta
+        "hijo": ["Análisis Matemático I"],
         "cat": "E",
         "nombre":"Laboratorio I Industrial", //skere
         "profesor":"",
@@ -816,41 +998,10 @@ let materiasciv = [
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+   
+    
     {
-        "id": "ch1",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Ciencias Humanas I",
-        "profesor":"",
-        "creditos":"4,5",
-        "semestre":"III",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "prob",
-        "hijo": ["analisis2"],
-        "cat": "G",
-        "nombre":"Probabilidad y estadística",
-        "profesor":"José Díaz Milesi",
-        "creditos":"7,5",
-        "semestre":"IV",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "mecanica2",
-        "hijo": ["mecanica1"],
-        "cat": "C",
-        "nombre":"Mecánica II",
-        "profesor":"Carlos Brun",
-        "creditos":"7,5",
-        "semestre":"IV",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "procontru1",
+        "id": " Procedimientos de construcción I ",
         "hijo": [],
         "cat": "E",
         "nombre":"",
@@ -860,600 +1011,241 @@ let materiasciv = [
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
     {
-        "id": "resMat",
-        "hijo": ["mecanica1"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "lbcivil1",
+        "id": "Laboratorio I Civil ",
         "hijo": [],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"IV",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
+    
     {
-        "id": "eco",
-        "hijo": [],
-        "cat": "G",
+        "id": "Hidraúlica",
+        "hijo": ["Introducción a la Termodinámica", "Análisis Matemático III"],
+        "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"7.5",
+        "semestre":"V",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+   
+
     {
-        "id": "comProf",
-        "hijo": [],
-        "cat": "G",
+        "id": "Laboratorio II Civil",
+        "hijo": ["Laboratorio I Civil"],
+        "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"V",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
     {
-        "id": "ivestOper",
-        "hijo": ["prob"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "hidro",
-        "hijo": ["itnrotermo", "analisis3"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "pasantia1",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "resMat2",
-        "hijo": ["resMat"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ceinIngMat",
-        "hijo": ["funQui"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "lbcivil2",
+        "id": "Topografía y  cartografia",
         "hijo": [],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"7.5",
+        "semestre":"VI",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "contYcost",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "topocart",
-        "hijo": [],
+        "id": "Hidrología",
+        "hijo": ["Hidraúlica"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"4.5",
+        "semestre":"VI",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "hidrolog",
-        "hijo": ["hidro"],
+        "id": "Mecánica de suelos I",
+        "hijo": [""],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VI",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "mecsuelo",
-        "hijo": ["resMat"],
+        "id": "Resistencia de materiales III",
+        "hijo": ["Resistencia de materiales II","mecanica2"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "resMat3",
-        "hijo": ["resMat2","mecanica2"],
-        "cat": "E",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VI",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
 
     },
     {
-        "id": "horm",
-        "hijo": ["pasantia1","resMat2","ceinIngMat"],
+        "id": "Hormigón I ",
+        "hijo": ["Práctica profesional1","Resistencia de materiales II","ceinIngMat"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"7.5",
+        "semestre":"VI",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "teologia",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+    
 
+  
     {
-        "id": "gestCal",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "mecsuelo2",
-        "hijo": ["mecsuelo"],
+        "id": "Mecánica de suelos II",
+        "hijo": ["Mecánica de suelos I "],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "resMat4",
-        "hijo": ["resMat3"],
+        "id": "Resistencia de materiales IV",
+        "hijo": ["Resistencia de materiales III"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
     {
-        "id": "pasantia2",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "horm2",
-        "hijo": ["horm","resMat3"],
+        "id": " Hormigón II",
+        "hijo": [" Hormigón II","Resistencia de materiales III"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "ingAmbiental",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+   
 
 
     {
-        "id": "plomeria1",
-        "hijo": ["hidro",],
+        "id": "Ingeniería Sanitaria I",
+        "hijo": ["Hidraúlica","Práctica profesional II"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VIII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "elcamino",
-        "hijo": ["mecsuelo2","topocart"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "trans",
-        "hijo": ["funQui"],
+        "id": "Caminos",
+        "hijo": ["Mecánica de Suelos II","Topografía y cartografia"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VIII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "lbcivil3",
-        "hijo": ["lbcivil2"],
+        "id": "Transporte",
+        "hijo": [""],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"4.5",
+        "semestre":"VIII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "ch2",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "plomeria2",
-        "hijo": ["plomeria1","hidrolog","pasantia2"],
+        "id": "Laboratorio III Civil",
+        "hijo": ["Laboratorio II Civil"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VIII",
+        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+        "descripcion":""
+    },
+  
+    {
+        "id": "Ingeniería Sanitaria II",
+        "hijo": ["Ingeniería Sanitaria I","Hidrología","Práctica profesional II"],
+        "cat": "E",
+        "nombre":"",
+        "profesor":"",
+        "creditos":"6",
+        "semestre":"IX",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "estrucmetalywood",
+        "id": "Estructuras metálicas y de madera ",
         "hijo": ["resMat4"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"7.5",
+        "semestre":"IX",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
     {
-        "id": "pasantia3",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ingtranspor",
-        "hijo": ["trans"],
+        "id": "Ingeniería de Transporte",
+        "hijo": ["Transporte"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"IX",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "proyInven",
-        "hijo": ["contYcost"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+  
 
     {
-        "id": "proyCiv",
-        "hijo": ["plomeria2","elcamino","resMat4","horm2" ],
+        "id": "Proyecto CIV",
+        "hijo": ["Caminos","Ingeniería Sanitaria II","Hormigón II" ],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"24",
+        "semestre":"X",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "elemGestion",
-        "hijo": ["eco"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-
-    },
-    {
-        "id": "gestiProy",
-        "hijo": ["proyInven"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "etica",
-        "hijo": ["ch1"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "cets",
-        "hijo": [],
-        "cat": "",
-        "nombre":"CETS/IDIOMAS/MLE",
-        "creditos":"18",
-        "descripcion":""
-    }
+ 
+   
 
 ];
-let materiasind = [
+let materiasEspInd = [
+
     {
-        "id": "analisis2",
-        "hijo": ["analisis1"],
-        "cat": "G",
-        "nombre":"Analisis II",
-        "profesor":"José Díaz Milesi",
-        "creditos":"9",
-        "semestre":"II",
-        "dicta":"Se dicta en todos los semestres",
-        "exonerable":"Se exonera parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "analisis1",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Analisis I",
-        "profesor":"José Díaz Milesi",
-        "creditos":"9",
-        "semestre":"I",
-        "dicta":"Se dicta en todos los semestres",
-        "exonerable":"Se exonera parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "gal1",//falta datos exoneracion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Geometría y Álgebra Lineal I",
-        "profesor":"Alfredo Piria",
-        "creditos":"9",
-        "semestre":"I",
-        "dicta":"Se dicta en todos los semestres",
-        "exonerable":"Se exonera parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "fisica1",//falta datos exoneracion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Física I",
-        "profesor":"Juan Pablo Fossati",
-        "creditos":"7,5",
-        "semestre":"I",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonera parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "intRob",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Introducción a la Robótica",
-        "profesor":"Gustavo Compagnone",
-        "creditos":"6",
-        "semestre":"I",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 6",// "se exonera parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "intIng",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Introducción a la Ingeniería",
-        "profesor":"Adrián Santilli",
-        "creditos":"6",
-        "semestre":"I",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "gal2",
-        "hijo": ["gal1"],
-        "cat": "G",
-        "nombre":"Geometría y algebra lineal II",
-        "profesor":"Alfredo Piria",
-        "creditos":"9",
-        "semestre":"II",
-        "dicta":"Se dicta en todos los semestres",
-        "exonerable":"se exonera parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "fisica2", //falta datos de exoneracion
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Física II",
-        "profesor":"Juan Pablo Fossati",
-        "creditos":"7,5",
-        "semestre":"II",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonera parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "matlab",//esta en informatica y telematica
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Matlab",
-        "profesor":"Blas Melissari",
-        "creditos":"6",
-        "semestre":"II",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "funQui",//nose si esta bien lo de exonerable
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Fundamentos Químicos de la Ingeniería",
-        "profesor":"Laura Luzuriaga",
-        "creditos":"6",
-        "semestre":"II",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "caluclo",//calculo? falta profe y exoneracion
-        "hijo": ["analisis2", "gal2"],
-        "cat": "G",
-        "nombre":"Cálculo Numérico",
-        "profesor":"Maximiliano Stock",//falta
-        "creditos":"6",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonera parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "analisis3",
-        "hijo": ["analisis2", "gal2"],
-        "cat": "C",
-        "nombre":"Análisis Matemático III ",
-        "profesor":"José Díaz Milesi ",
-        "creditos":"9",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"se exonera parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "mecanica1",
-        "hijo": ["fisica1", "analisis1"],
-        "cat": "C",
-        "nombre":"Mecánica I",
-        "profesor":"Carlos Brun",
-        "creditos":"7,5",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonera parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "cad",//falta datos de exoneracion
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Laboratorio CAD",
-        "profesor":"Daniel Larnaudie",
-        "creditos":"6",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonera parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "labInd",
+        "id": "Laboratorio I Industrial",
         "hijo": [],
         "cat": "E",
         "nombre":"Laboratorio I Industrial",
@@ -1464,45 +1256,10 @@ let materiasind = [
         "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
     {
-        "id": "ch1",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Ciencias Humanas I",
-        "profesor":"Fernando Otero",
-        "creditos":"4,5",
-        "semestre":"III",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "prob",
-        "hijo": ["analisis2"],
-        "cat": "G",
-        "nombre":"Probabilidad y estadística",
-        "profesor":"José Díaz Milesi",
-        "creditos":"7,5",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "mecanica2",
-        "hijo": ["mecanica1"],
-        "cat": "C",
-        "nombre":"Mecánica II",
-        "profesor":"Carlos Brun",
-        "creditos":"7,5",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "termodinamica",
-        "hijo": ["analisis1"],
+        "id": "Termodinámica",
+        "hijo": ["Análisis Matemático I"],
         "cat": "E",
         "nombre":"Termodinámica",
         "profesor":"Gerardo Beltrame ",
@@ -1512,21 +1269,10 @@ let materiasind = [
         "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+   
     {
-        "id": "resMat",//faltan datos de exoneracion
-        "hijo": ["mecanica1"],
-        "cat": "C",
-        "nombre":"Resistencia de materiales I",
-        "profesor":"Eduardo Lurner",
-        "creditos":"6",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ayudaTecnica",
-        "hijo": ["cad"],
+        "id": "Ayudantía Técnica",
+        "hijo": ["Laboratorio CAD"],
         "cat": "E",
         "nombre":"Ayudantía Técnica",
         "profesor":"Ricardo Cosentino",
@@ -1536,93 +1282,11 @@ let materiasind = [
         "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
+    
     {
-        "id": "eco",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Economía",
-        "profesor":"Heber Francia",
-        "creditos":"6",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "comProf",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Comunicación Profesional",
-        "profesor":"María del Huerto Prato",
-        "creditos":"3",
-        "semestre":"IV",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ivestOper",
-        "hijo": ["prob"],
-        "cat": "G",
-        "nombre":"Investigación Operativa I",
-        "profesor":"Claudio Ruibal",
-        "creditos":"6",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "electroMag",//faltan datos de exoneracion
-        "hijo": ["fisica2", "analisis3"],
-        "cat": "C",
-        "nombre":"Electromagnetismo",
-        "profesor":"Gerardo Beltrame",
-        "creditos":"7,5",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "pasantia1",//no necesita datos a lo sumo una descripcion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Pasantia 1",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"V",
-        "dicta":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "resMat2",
-        "hijo": ["resMat"],
-        "cat": "C",
-        "nombre":"Resistencia de los Materiales II",
-        "profesor":"Adrián Santilli",
-        "creditos":"6",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ceinIngMat",
-        "hijo": ["funQui"],
-        "cat": "C",
-        "nombre":"Ciencia e Ingeniería de los Materiales",
-        "profesor":"Manuel Vega Utrera",
-        "creditos":"6",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "labInd2",
-        "hijo": ["labInd"],
+        "id": "Laboratorio II Industrial",
+        "hijo": ["Laboratorio I Industrial"],
         "cat": "E",
         "nombre":"Laboratorio II Industrial",
         "profesor":"Marcelo Castelli",
@@ -1632,45 +1296,12 @@ let materiasind = [
         "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+   
+    
+    
     {
-        "id": "contYcost",//falta responsable
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Contabilidad y Costos",
-        "profesor":"",
-        "creditos":"6",
-        "semestre":"V",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ivestOper2",
-        "hijo": ["ivestOper"],
-        "cat": "C",
-        "nombre":"Investigacion Operativa II",
-        "profesor":"Claudio Ruibal",
-        "creditos":"6",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "Electrotecnia1",
-        "hijo": ["electroMag"],
-        "cat": "C",
-        "nombre":"Electrotecnia I",
-        "profesor":"Mauricio Riera",
-        "creditos":"7,5",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "mecFludis",
-        "hijo": ["analisis3", "pasantia1", "termodinamica"],
+        "id": "Mecánica de fluídos ",
+        "hijo": ["Análisis Matemático III", "Práctica profesional1", "Termodinámica"],
         "cat": "E",
         "nombre":"Mecánica de los Fluidos",
         "profesor":"Gerardo Beltrame",
@@ -1693,34 +1324,10 @@ let materiasind = [
         "descripcion":""
 
     },
+    
     {
-        "id": "teologia",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Cuestiones de Teología",
-        "profesor":"Juan Carlos Carrasco",
-        "creditos":"4,5",
-        "semestre":"VI",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-
-    {
-        "id": "gestCal",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Gestión de Calidad",
-        "profesor":"Darío Alentorn",
-        "creditos":"4,5",
-        "semestre":"VII",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "operProd1",
-        "hijo": ["ivestOper"],
+        "id": "Organizacíon de la Producción I",
+        "hijo": ["Investigación operativa I"],
         "cat": "E",
         "nombre":"Organizacíon de la Producción I",
         "profesor":"Martín Tanco",
@@ -1731,8 +1338,8 @@ let materiasind = [
         "descripcion":""
     },
     {
-        "id": "Electrotecnia2",
-        "hijo": ["Electrotecnia1"],
+        "id": "Electrotecnia2 ",
+        "hijo": ["Electrotecnia 1"],
         "cat": "E",
         "nombre":"Electrotecnia II",
         "profesor":"Mauricio Riera",
@@ -1742,21 +1349,10 @@ let materiasind = [
         "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+ 
     {
-        "id": "pasantia2",//no se necesitan datos quisas descripcion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Pasantia 2",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"VII",
-        "dicta":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "transfCalor",
-        "hijo": ["termodinamica"],
+        "id": "Transferencia de Calor",
+        "hijo": ["Termodinamica"],
         "cat": "E",
         "nombre":"Transferencia de Calor",
         "profesor":"Miguel Baldriz Chouhy",
@@ -1766,21 +1362,10 @@ let materiasind = [
         "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+  
     {
-        "id": "ingAmbiental",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"Ingeniería Ambiental",
-        "profesor":"Viviana Rocco",
-        "creditos":"4,5",
-        "semestre":"VII",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "maq1",
-        "hijo": ["mecFludis", "mecanica2"],
+        "id": "Máquinas I",
+        "hijo": ["Mecánica de los fluídos", "Mecánica 2"],
         "cat": "E",
         "nombre":"Máquinas I",
         "profesor":"Marcelo Schimchak",
@@ -1793,8 +1378,8 @@ let materiasind = [
     },
 
     {
-        "id": "maq2",
-        "hijo": ["pasantia2", "transfCalor"],
+        "id": "Máquinas II",
+        "hijo": ["Práctica profesional II", "Transferencia de calor"],
         "cat": "E",
         "nombre":"Máquinas II",
         "profesor":"Miguel Baldriz Chouhy",
@@ -1804,21 +1389,10 @@ let materiasind = [
         "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
     {
-        "id": "Electronica",
-        "hijo": ["electroMag"],
-        "cat": "C",
-        "nombre":"Electrónica",
-        "profesor":"",
-        "creditos":"7,5",
-        "semestre":"VIII",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "prosUnitarios",
-        "hijo": ["funQui"],
+        "id": "Procesos Unitarios",
+        "hijo": ["Fundamentos Químicos de la Ingeniería"],
         "cat": "E",
         "nombre":"Procesos Unitarios",
         "profesor":"Yamandú Rodríguez",
@@ -1829,7 +1403,7 @@ let materiasind = [
         "descripcion":""
     },
     {
-        "id": "labInd3",
+        "id": "Laboratorio III Industrial",
         "hijo": ["labInd2"],
         "cat": "E",
         "nombre":"Laboratorio III Industrial",
@@ -1841,7 +1415,7 @@ let materiasind = [
         "descripcion":""
     },
     {
-        "id": "ch2",
+        "id": "Ciencias Humanas II",
         "hijo": [],
         "cat": "G",
         "nombre":"Ciencias Humanas II",
@@ -1853,7 +1427,7 @@ let materiasind = [
         "descripcion":""
     },
     {
-        "id": "autoControlIndustrial",
+        "id": "Automatización y control industrial",
         "hijo": ["Electronica"],
         "cat": "E",
         "nombre":"Automatización y control industrial",
@@ -1865,8 +1439,8 @@ let materiasind = [
         "descripcion":""
     },
     {
-        "id": "diseElementMaquinas",
-        "hijo": ["resMat2"],
+        "id": "Diseño de elementos de máquinas",
+        "hijo": ["Resistencia de materiales II"],
         "cat": "E",
         "nombre":"Diseño de Elementos de Máquinas",
         "profesor":"Oliver Kraus",
@@ -1876,21 +1450,10 @@ let materiasind = [
         "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+
     {
-        "id": "pasantia3",//no necesitamos datos capas alguna descripcion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Pasantia 3",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"IX",
-        "dicta":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "maq3",
-        "hijo": ["maq2"],
+        "id": "Máquinas III",
+        "hijo": ["Máquinas II"],
         "cat": "E",
         "nombre":"Máquinas III",
         "profesor":"Miguel Angel Causa y Hector Tosar",
@@ -1900,22 +1463,11 @@ let materiasind = [
         "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "proyInven",//ver que poner con la exoneracion
-        "hijo": ["contYcost"],
-        "cat": "G",
-        "nombre":"Proyectos de Inversión ",
-        "profesor":"Marcos Rey",
-        "creditos":"4,5",
-        "semestre":"IX",
-        "dicta":"Se dicta en semestre impar",
-        "exonerable":"Se exonera totalmente",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+  
 
     {
-        "id": "proyInd",//ver que poner con la exoneracion
-        "hijo": ["Electrotecnia2", "maq3"],
+        "id": "Proyecto IND",//ver que poner con la exoneracion
+        "hijo": ["Electrotecnia II", "Máquinas III"],
         "cat": "E",
         "nombre":"Proyecto Ingeniería Industrial",
         "profesor":"Miguel Angel Causa, Juan Martínez Galán y Marcelo Castelli",
@@ -1925,653 +1477,168 @@ let materiasind = [
         "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "elemGestion",
-        "hijo": ["eco"],
-        "cat": "G",
-        "nombre":"Elementos de Gestión Empresarial ",
-        "profesor":"Fernando Requena",
-        "creditos":"6",
-        "semestre":"X",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
 
-    },
-    {
-        "id": "gestiProy",//Probablemente mal profesor
-        "hijo": ["proyInven"],
-        "cat": "G",
-        "nombre":"Gestión de Proyectos",
-        "profesor":"Viviana Rocco",
-        "creditos":"4,5",
-        "semestre":"X",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "etica",
-        "hijo": ["ch1"],
-        "cat": "G",
-        "nombre":"Ética Profesional",
-        "profesor":"Manuel Vega Utrera y Juan Carlos Carrasco",
-        "creditos":"6",
-        "semestre":"X",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "cets",
-        "hijo": [],
-        "cat": "",
-        "nombre":"CETS/IDIOMAS/MLE",
-        "creditos":"18",
-        "descripcion":""
-    }
 
 ];
 
 
-let materiasinf=[
+let materiasEspinf=[
+    
+    
     {
-        "id": "analisis2",
-        "hijo": ["analisis1"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "analisis1",
+        "id": "Logica",
         "hijo": [],
-        "cat": "G",
+        "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"II",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
+    
     {
-        "id": "gal1",
-        "hijo": [],
-        "cat": "G",
+        "id": "Matemática Discreta",
+        "hijo": ["Análisis Matemático I", "Geometría y Álgebra Lineal I"],
+        "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"9",
+        "semestre":"III",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+   
+ 
     {
-        "id": "fisica1",//falta datos exoneracion
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Física I",
-        "profesor":"Juan Pablo Fossati",
-        "creditos":"7,5",
-        "semestre":"I",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "intRob",
-        "hijo": [],
-        "cat": "G",
+        "id": "Análisis y Diseño de Algoritmos",
+        "hijo": ["Programación II"],
+        "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"IV",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+
+ 
     {
-        "id": "intIng",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "gal2",
-        "hijo": ["gal1"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "logica",
+        "id": "Arquitectura de Aplicaciones ",
         "hijo": [],
         "cat": "E",
         "nombre":"",
         "profesor":"",
         "creditos":"",
-        "semestre":"",
+        "semestre":"V",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+    
+  
     {
-        "id": "sisdig1",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "prog1",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "caluclo",
-        "hijo": ["analisis2", "gal2"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "matdis",
-        "hijo": ["analisis1", "gal1"],
+        "id": "Teoría de la Computación",
+        "hijo": ["Matemática Discreta","Programación II"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
         "creditos":"",
-        "semestre":"",
+        "semestre":"VI",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+ 
+  
     {
-        "id": "prog2",
-        "hijo": ["prog1"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "bbdd",
-        "hijo": ["prog1"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "sisdig2",
-        "hijo": ["sisdig1"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ch1",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "prob",
-        "hijo": ["analisis2"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "analgo",
-        "hijo": ["prog2"],
+        "id": "Ingeniería de Software II" ,
+        "hijo": ["Ingeniería de Software I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "bbdd2",
-        "hijo": ["bbdd1"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic1",
-        "hijo": ["prog2"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "eco",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "comProf",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ivestOper",
-        "hijo": ["prob"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "arqapp",
-        "hijo": [],
+        "id": "Infraestructura de Informática",
+        "hijo": ["Redes de Datos I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "pasantia1",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Pasantia 1",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "sisop",
-        "hijo": ["sisdig2"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic2",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "contYcost",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "teoComp",
-        "hijo": ["matdis"],
-        "cat": "E",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ivestOper2",
-        "hijo": ["ivestOper"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ingsoft",
-        "hijo": ["tic1"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "redes1",
-        "hijo": ["sisdig2", "pasantia1"],
-        "cat": "E",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic3",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "teologia",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "gestCal",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ingsoft2",
-        "hijo": ["ingsoft"],
-        "cat": "E",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "infrainfo",
-        "hijo": ["redes1"],
-        "cat": "E",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "sisdis",
-        "hijo": ["redes1"],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "pasantia2",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"VII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
 
     {
-        "id": "tic4",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "derechotel",
+        "id": "Derecho Telemático",
         "hijo": [],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"4.5",
+        "semestre":"VII",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
 
     },
 
     {
-        "id": "metoinv",
-        "hijo": [],
+        "id": "Seguridad Informática",
+        "hijo": ["Redes de Datos I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"IX",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
+ 
     {
-        "id": "tic5",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "ch2",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "audicontrol",
-        "hijo": ["ingsoft"],
+        "id": "Auditoría y Control ",
+        "hijo": ["Ingeniería de Software I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"IX",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
     {
-        "id": "intelnegocios",
-        "hijo": ["bbdd2"],
+        "id": "Inteligencia de Negocios ",
+        "hijo": ["Diseño de Base de Datos I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"6",
+        "semestre":"IX",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "pasantia3",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "tic6",
-        "hijo": [],
-        "cat": "C",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "proyInven",
-        "hijo": ["contYcost"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+    
+ 
+  
 
     {
-        "id": "proyInf",
-        "hijo": ["analgo", "redes1","ingsoft"],
+        "id": "Proyecto INF",
+        "hijo": ["Análisis y Diseño de Algoritmos", "Redes de Datos I","Ingeniería de Software I"],
         "cat": "E",
         "nombre":"",
         "profesor":"",
-        "creditos":"",
-        "semestre":"",
+        "creditos":"24",
+        "semestre":"X",
         "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "elemGestion",
-        "hijo": ["eco"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
+  
 
-    },
-    {
-        "id": "gestiProy",
-        "hijo": ["proyInven"],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "etica",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"",
-        "profesor":"",
-        "creditos":"",
-        "semestre":"",
-        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
-    {
-        "id": "cets",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"CETS/IDIOMAS/MLE",
-        "creditos":"18",
-        "descripcion":""
-    }
 ];
+
 let materiasCienciaDatos=[
     {
     "id": "Calculo Basico",
@@ -2827,7 +1894,7 @@ let materiasCienciaDatos=[
         "descripcion":""
     },
      {
-    "id": "Investigación de mercado",
+    "id": "Investigación de merLaboratorio CADo",
     "hijo": ["Práctica Profesional I"],
         "cat": "E",
         "nombre":"",
@@ -2980,21 +2047,52 @@ let materiasCienciaDatos=[
 
 htmlid= document.getElementsByTagName("html")[0].id;
 var materias
+var cets;
 if(htmlid=="Informatica"){
- materias= materiasinf;
+    materias=materiasGenerales;
+    for (let index = 0; index < matericasComunes.length; index++) {
+        if (matericasComunes[index].carreras.includes("inf")){
+            materias.push(matericasComunes[index]);
+        }
+        
+    }   
+    materias= materias.concat(materiasEspinf)
+    cets=cetInf
 }
 else if(htmlid =="Industrial"){
-materias = materiasind;
+    materias=materiasGenerales;
+    for (let index = 0; index < matericasComunes.length; index++) {
+        if (matericasComunes[index].carreras.includes("ind")){
+            materias.push(matericasComunes[index]);
+        }
+    }
+    materias= materias.concat(materiasEspInd)
+    cets=cetInd
 }
 else if (htmlid =="Civil"){
-    materias=materiasciv;
-}
+    materias=materiasGenerales;
+    for (let index = 0; index < matericasComunes.length; index++) {
+        if (matericasComunes[index].carreras.includes("civ")){
+            materias.push(matericasComunes[index]);
+        }
+    }
+    materias= materias.concat(materiasEspCiv)
+    cets=cetCiv
+} 
+
 else if( htmlid=="Telematica"){
-    materias=materiastel;
-}
-else if( htmlid=="Telematica"){
-    materias=materiastel;
-}
+    materias=materiasGenerales;
+    for (let index = 0; index < matericasComunes.length; index++) {
+        if (matericasComunes[index].carreras.includes("tel")){
+            materias.push(matericasComunes[index]);
+        }
+    }
+    materias= materias.concat(materiasEspecificasTel)
+    cets=cetTel
+    
+    
+}   
+
 else if( htmlid=="cienciaDatos"){
     materias=materiasCienciaDatos;
 }
@@ -3005,14 +2103,16 @@ addCredit();
 
 function addCredit(){
     for(i =0;i<materias.length;i++){
+        
         document.getElementById(materias[i].id).innerHTML+=  "<br> ("+ materias[i].creditos +") ";
+    }
+    for(i =0;i<cets.length;i++){
+        
+        document.getElementById(cets[i].id).innerHTML+=  "<br> ("+ cets[i].creditos +") ";
     }
 }
 
 function makeGird(){
-    
-    if(htmlid=="cienciaDatos"){
-       
     
     for(i =0;i<materias.length;i++){
        let mycol = document.createElement("button");
@@ -3048,11 +2148,68 @@ function makeGird(){
     }
     if (materias[i].semestre=="VIII"){
         document.getElementById("sem8").appendChild(mycol);
-      
+        
+    }
+    if (materias[i].semestre=="IX"){
+        document.getElementById("sem9").appendChild(mycol);
+        
+    }
+    if (materias[i].semestre=="X"){
+        document.getElementById("sem10").appendChild(mycol);
+        
+    }
+    }
+
+    for (let i = 0; i < cets.length; i++) {
+        let mycol = document.createElement("button");
+        
+        mycol.className ="btn btn-light" ;
+        mycol.innerHTML=cets[i].nombre;
+        mycol.id=cets[i].id;
+        
+        if (cets[i].semestre=="I"){
+             document.getElementById("sem1").appendChild(mycol);
+        }
+        if (cets[i].semestre=="II"){
+         document.getElementById("sem2").appendChild(mycol);
+       
+     }
+     if (cets[i].semestre=="III"){
+         document.getElementById("sem3").appendChild(mycol);
+       
+     }
+     if (cets[i].semestre=="IV"){
+         document.getElementById("sem4").appendChild(mycol);
+       
+     }
+     if (cets[i].semestre=="V"){
+         document.getElementById("sem5").appendChild(mycol);
+       
+     }
+     if (cets[i].semestre=="VI"){
+         document.getElementById("sem6").appendChild(mycol);
+       
+     }
+     if (cets[i].semestre=="VII"){
+         document.getElementById("sem7").appendChild(mycol);
+       
+     }
+     if (cets[i].semestre=="VIII"){
+         document.getElementById("sem8").appendChild(mycol);
+         
+     }
+     if (cets[i].semestre=="IX"){
+         document.getElementById("sem9").appendChild(mycol);
+         
+     }
+     if (cets[i].semestre=="X"){
+         document.getElementById("sem10").appendChild(mycol);
+         
+     }
     }
 }
-}
-}
+
+
 
 var staticbool=true;
 var isfiltred=false;
@@ -3098,14 +2255,8 @@ function filtro(id){
       
 
         }
-        else if (id=="todo") {
-
-            document.getElementById(materias[i].id).style.backgroundColor = "rgb(204, 204, 204)";
-            document.getElementById(materias[i].id).style.boxShadow = "0px 0px 0px 0.0rem rgba(216,217,219,0.0)";
-
-        }
-
     }
+    
     if (id=="todo"){
         isfiltred=false;
     staticbool=!staticbool;
@@ -3155,26 +2306,6 @@ function setValue(value) {
     document.getElementById('value').value = value;
 }
 
-
-
-/*function informar(idtemp) {
-    var i, l, options = [{
-            value: 'first',
-            text: 'First'
-        }, {
-            value: 'second',
-            text: 'Second'
-        }],
-        newWindow = window.open("", null, "height=200,width=400,status=yes,toolbar=no,menubar=no,location=no");
-
-    newWindow.document.write("<select onchange='window.opener.setValue(this.value);'>");
-    for(i=0,l=options.length; i<l; i++) {
-        newWindow.document.write("<option value='"+options[i].value+"'>");
-        newWindow.document.write(options[i].text);
-        newWindow.document.write("</option>");
-    }
-    newWindow.document.write("</select>");
-}*/
 function informar(idpadre) {
 if (idpadre != "cets"){
 
@@ -3195,10 +2326,10 @@ if (idpadre != "cets"){
                 for (k = 0; k < materias[i].hijo.length; k++){
                     if(materias[j].id === materias[i].hijo[k]){
                         if(hij === 0){
-                            stringPrevias=stringPrevias+" "+materias[j].nombre;
+                            stringPrevias=stringPrevias+" "+materias[j].id;
                         }
                         else{
-                            stringPrevias=stringPrevias+" , "+materias[j].nombre;
+                            stringPrevias=stringPrevias+" , "+materias[j].id;
                         }
                         hij++
                     }
@@ -3207,18 +2338,7 @@ if (idpadre != "cets"){
             if(stringPrevias===" "){stringPrevias= " No tiene previas"}
 
 
-
-            if(materias[i].profesor === "" && materias[i].dicta === "" && stringPrevias === " No tiene previas" && materias[i].exonerable === ""){}
-            if(materias[i].id === "pasantia1" || materias[i].id === "pasantia2" || materias[i].id === "pasantia3"){
-                popup.innerHTML="<button href=\"#\" id=\"btn-cerrar-popup\" class=\"btn-cerrar-popup\" onclick=\"cerrar()\"><i class=\"fa fa-times\"></i></button>\n" +
-                    "          <h3>"+ materias[i].nombre+"</h3>\n" +
-                    "          <span>Cantidad de Creditos: "+materias[i].creditos +"</span>\n" +
-                    "<div></div>"+
-                    "          <span>Descripcion: "+materias[i].descripcion+"</span>\n"
-                ;
-
-            }
-            else{
+           
             	popup.innerHTML="<button href=\"#\" id=\"btn-cerrar-popup\" class=\"btn-cerrar-popup\" onclick=\"cerrar()\"><i class=\"fa fa-times\"></i></button>\n" +
                     "          <h3 style='Color: rgb(37,50,104)'>"+ materias[i].nombre+"</h3>\n" +
 
@@ -3226,7 +2346,7 @@ if (idpadre != "cets"){
                                 "<div></div>"+
                     "          <span style='font-weight: bold; Color: rgb(37,50,104)'>Cantidad de Creditos: </span>" +"<span style='Color: rgb(37,50,134)'>"+materias[i].creditos +"</span>\n" +
                     "<div></div>"+
-                    "          <span style='font-weight: bold; Color: rgb(37,50,104)'>Semestre: </span>" +"<span style='Color: rgb(37,50,134)'>"+materias[i].dicta +"</span>\n" +
+                    "          <span style='font-weight: bold; Color: rgb(37,50,104)'>Semestre: </span>" +"<span style='Color: rgb(37,50,134)'>"+materias[i].semestre+"</span>\n" +
                     "<div></div>"+
                     "          <span style='font-weight: bold; Color: rgb(37,50,104)'>Previas:</span>" +"<span style='Color: rgb(37,50,134)'>"+stringPrevias+"</span>\n" +
                     "<div></div>"+
@@ -3234,23 +2354,13 @@ if (idpadre != "cets"){
                     "<div></div>"+
                     "          <span style='font-weight: bold; Color: rgb(37,50,104)'>Descripcion: </span>" +"<span style='Color: rgb(37,50,134)'>"+materias[i].descripcion+"</span>\n"
                 ;
-            }
+            
 
         }
 
     }
 }
-//if (idpadre == "cets") {
 
-		/*	var btnAbrirPopup = document.getElementById('idpadre'),
-        	overlay2 = document.getElementById('overlay2'),
-        	popup2 = document.getElementById('popup2'),
-        	btnCerrarPopup2 = document.getElementById('btn-cerrar-popup2');
-        	overlay2.classList.add('active');
-
-*/
-
-//}
 }
 function cerrar(){
 
@@ -3280,32 +2390,7 @@ function cerrar2(){
     popup2.classList.remove("active")
 
 }
-/*btnCerrarPopup.addEventListener('click',function()){
-	overlay.classList.remove('active');
-}*/
 
-
-
-/*
-function loop(){
-  addEventListener("mousenter",function (event) {
-    pintar( event.getSource().id)},false);
-
-
-  addEventListener("mouseleave",function (event) {
-
-    despintar( document.event.getcSource().id)},false);
-  for (i = 0; i < materias.length; i++) {
-    console.log("sale")
-    if (materias[i].id === idpadre) {
-      document.getElementById(materias[i].hijo).style.backgroundColor = "rgba(248,249,250,1)";
-      document.getElementById(materias[i].hijo).style.boxShadow = "0px 0px 0px 0.0rem rgba(216,217,219,0.5)";
-    }
-  }
-}
-loop()
-
-*/
 
 idPadre = null;
 
@@ -3327,611 +2412,6 @@ for (let index = 0; index < mouseTarget.length; index++) {
     
 }
 
-
-
- //0
- /*
-mouseTarget[0].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[0].id);
-});
-mouseTarget[0].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[0].id);
-});
-mouseTarget[0].addEventListener("click", event => {
-    informar(mouseTarget[0].id);
-});
-//1
-mouseTarget[1].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[1].id);
-});
-mouseTarget[1].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[1].id);
-});
-mouseTarget[1].addEventListener("click", event => {
-    informar(mouseTarget[1].id);
-});
-//6
-mouseTarget[6].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[6].id);
-});
-mouseTarget[6].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[6].id);
-});
-mouseTarget[6].addEventListener("click", event => {
-    informar(mouseTarget[6].id);
-});
-//5
-mouseTarget[5].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[5].id);
-});
-mouseTarget[5].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[5].id);
-});
-mouseTarget[5].addEventListener("click", event => {
-    informar(mouseTarget[5].id);
-});
-//4
-mouseTarget[4].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[4].id);
-});
-mouseTarget[4].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[4].id);
-});
-mouseTarget[4].addEventListener("click", event => {
-    informar(mouseTarget[4].id);
-});
-//2
-    mouseTarget[2].addEventListener("mouseenter", e => {
-        pintar(mouseTarget[2].id);
-    });
-    mouseTarget[2].addEventListener("mouseleave", e => {
-        despintar(mouseTarget[2].id);
-    });
-    mouseTarget[2].addEventListener("click", event => {
-        informar(mouseTarget[2].id);
-    });
-//3
-    mouseTarget[3].addEventListener("mouseenter", e => {
-        pintar(mouseTarget[3].id);
-    });
-    mouseTarget[3].addEventListener("mouseleave", e => {
-        despintar(mouseTarget[3].id);
-    });
-    mouseTarget[3].addEventListener("click", event => {
-        informar(mouseTarget[3].id);
-    });
-//7
-mouseTarget[7].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[7].id);
-});
-mouseTarget[7].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[7].id);
-});
-mouseTarget[7].addEventListener("click", event => {
-    informar(mouseTarget[7].id);
-});
-//8
-mouseTarget[8].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[8].id);
-});
-mouseTarget[8].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[8].id);
-});
-mouseTarget[8].addEventListener("click", event => {
-    informar(mouseTarget[8].id);
-});
-//9
-mouseTarget[9].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[9].id);
-});
-mouseTarget[9].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[9].id);
-});
-mouseTarget[9].addEventListener("click", event => {
-    informar(mouseTarget[9].id);
-});
-//10
-mouseTarget[10].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[10].id);
-});
-mouseTarget[10].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[10].id);
-});
-mouseTarget[10].addEventListener("click", event => {
-    informar(mouseTarget[10].id);
-});
-//11
-mouseTarget[11].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[11].id);
-});
-mouseTarget[11].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[11].id);
-});
-mouseTarget[11].addEventListener("click", event => {
-    informar(mouseTarget[11].id);
-});
-//12
-mouseTarget[12].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[12].id);
-});
-mouseTarget[12].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[12].id);
-});
-mouseTarget[12].addEventListener("click", event => {
-    informar(mouseTarget[12].id);
-});
-//13
-mouseTarget[13].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[13].id);
-});
-mouseTarget[13].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[13].id);
-});
-mouseTarget[13].addEventListener("click", event => {
-    informar(mouseTarget[13].id);
-});
-//14
-mouseTarget[14].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[14].id);
-});
-mouseTarget[14].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[14].id);
-});
-mouseTarget[14].addEventListener("click", event => {
-    informar(mouseTarget[14].id);
-});
-//15
-mouseTarget[15].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[15].id);
-});
-mouseTarget[15].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[15].id);
-});
-mouseTarget[15].addEventListener("click", event => {
-    informar(mouseTarget[15].id);
-});
-//16
-mouseTarget[16].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[16].id);
-});
-mouseTarget[16].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[16].id);
-});
-mouseTarget[16].addEventListener("click", event => {
-    informar(mouseTarget[16].id);
-});
-//17
-mouseTarget[17].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[17].id);
-});
-mouseTarget[17].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[17].id);
-});
-mouseTarget[17].addEventListener("click", event => {
-    informar(mouseTarget[17].id);
-});
-//18
-mouseTarget[18].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[18].id);
-});
-mouseTarget[18].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[18].id);
-});
-mouseTarget[18].addEventListener("click", event => {
-    informar(mouseTarget[18].id);
-});
-//19
-mouseTarget[19].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[19].id);
-});
-mouseTarget[19].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[19].id);
-});
-mouseTarget[19].addEventListener("click", event => {
-    informar(mouseTarget[19].id);
-});
-//20
-mouseTarget[20].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[20].id);
-});
-mouseTarget[20].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[20].id);
-});
-mouseTarget[20].addEventListener("click", event => {
-    informar(mouseTarget[20].id);
-});
-//21
-mouseTarget[21].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[21].id);
-});
-mouseTarget[21].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[21].id);
-});
-mouseTarget[21].addEventListener("click", event => {
-    informar(mouseTarget[21].id);
-});
-//22
-mouseTarget[22].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[22].id);
-});
-mouseTarget[22].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[22].id);
-});
-mouseTarget[22].addEventListener("click", event => {
-    informar(mouseTarget[22].id);
-});
-//23
-mouseTarget[23].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[23].id);
-});
-mouseTarget[23].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[23].id);
-});
-mouseTarget[23].addEventListener("click", event => {
-    informar(mouseTarget[23].id);
-});
-//24
-mouseTarget[24].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[24].id);
-});
-mouseTarget[24].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[24].id);
-});
-mouseTarget[24].addEventListener("click", event => {
-    informar(mouseTarget[24].id);
-});
-//25
-mouseTarget[25].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[25].id);
-});
-mouseTarget[25].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[25].id);
-});
-mouseTarget[25].addEventListener("click", event => {
-    informar(mouseTarget[25].id);
-});
-//26
-mouseTarget[26].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[26].id);
-});
-mouseTarget[26].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[26].id);
-});
-mouseTarget[26].addEventListener("click", event => {
-    informar(mouseTarget[26].id);
-});
-//27
-mouseTarget[27].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[27].id);
-});
-mouseTarget[27].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[27].id);
-});
-mouseTarget[27].addEventListener("click", event => {
-    informar(mouseTarget[27].id);
-});
-//28
-mouseTarget[28].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[28].id);
-});
-mouseTarget[28].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[28].id);
-});
-mouseTarget[28].addEventListener("click", event => {
-    informar(mouseTarget[28].id);
-});
-//29
-mouseTarget[29].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[29].id);
-});
-mouseTarget[29].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[29].id);
-});
-mouseTarget[29].addEventListener("click", event => {
-    informar(mouseTarget[29].id);
-});
-//30
-mouseTarget[30].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[30].id);
-});
-mouseTarget[30].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[30].id);
-});
-mouseTarget[30].addEventListener("click", event => {
-    informar(mouseTarget[30].id);
-});
-//31
-mouseTarget[31].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[31].id);
-});
-mouseTarget[31].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[31].id);
-});
-mouseTarget[31].addEventListener("click", event => {
-    informar(mouseTarget[31].id);
-});
-//32
-mouseTarget[32].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[32].id);
-});
-mouseTarget[32].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[32].id);
-});
-mouseTarget[32].addEventListener("click", event => {
-    informar(mouseTarget[32].id);
-});
-//33
-mouseTarget[33].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[33].id);
-});
-mouseTarget[33].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[33].id);
-});
-mouseTarget[33].addEventListener("click", event => {
-    informar(mouseTarget[33].id);
-});
-//34
-mouseTarget[34].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[34].id);
-});
-mouseTarget[34].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[34].id);
-});
-mouseTarget[34].addEventListener("click", event => {
-    informar(mouseTarget[34].id);
-});
-//35
-mouseTarget[35].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[35].id);
-});
-mouseTarget[35].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[35].id);
-});
-mouseTarget[35].addEventListener("click", event => {
-    informar(mouseTarget[35].id);
-});
-//36
-mouseTarget[36].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[36].id);
-});
-mouseTarget[36].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[36].id);
-});
-mouseTarget[36].addEventListener("click", event => {
-    informar(mouseTarget[36].id);
-});
-//37
-mouseTarget[37].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[37].id);
-});
-mouseTarget[37].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[37].id);
-});
-mouseTarget[37].addEventListener("click", event => {
-    informar(mouseTarget[37].id);
-});
-//38
-mouseTarget[38].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[38].id);
-});
-mouseTarget[38].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[38].id);
-});
-mouseTarget[38].addEventListener("click", event => {
-    informar(mouseTarget[38].id);
-});
-//39
-if (materias != materiasCienciaDatos){
-mouseTarget[39].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[39].id);
-});
-mouseTarget[39].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[39].id);
-});
-mouseTarget[39].addEventListener("click", event => {
-    informar(mouseTarget[39].id);
-});
-
-//40
-mouseTarget[40].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[40].id);
-});
-mouseTarget[40].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[40].id);
-});
-mouseTarget[40].addEventListener("click", event => {
-    informar(mouseTarget[40].id);
-});
-//41
-mouseTarget[41].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[41].id);
-});
-mouseTarget[41].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[41].id);
-});
-mouseTarget[41].addEventListener("click", event => {
-    informar(mouseTarget[41].id);
-});
-//42
-mouseTarget[42].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[42].id);
-});
-mouseTarget[42].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[42].id);
-});
-mouseTarget[42].addEventListener("click", event => {
-    informar(mouseTarget[42].id);
-});
-//43
-mouseTarget[43].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[43].id);
-});
-mouseTarget[43].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[43].id);
-});
-mouseTarget[43].addEventListener("click", event => {
-    informar(mouseTarget[43].id);
-});
-//44
-mouseTarget[44].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[44].id);
-});
-mouseTarget[44].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[44].id);
-});
-mouseTarget[44].addEventListener("click", event => {
-    informar(mouseTarget[44].id);
-});
-//45
-mouseTarget[45].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[45].id);
-});
-mouseTarget[45].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[45].id);
-});
-mouseTarget[45].addEventListener("click", event => {
-    informar(mouseTarget[45].id);
-});
-//46
-mouseTarget[46].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[46].id);
-});
-mouseTarget[46].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[46].id);
-});
-mouseTarget[46].addEventListener("click", event => {
-    informar(mouseTarget[46].id);
-});
-//47
-mouseTarget[47].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[47].id);
-});
-mouseTarget[47].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[47].id);
-});
-mouseTarget[47].addEventListener("click", event => {
-    informar(mouseTarget[47].id);
-});
-//48
-mouseTarget[48].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[48].id);
-});
-mouseTarget[48].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[48].id);
-});
-mouseTarget[48].addEventListener("click", event => {
-    informar(mouseTarget[48].id);
-});
-//49
-mouseTarget[49].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[49].id);
-});
-mouseTarget[49].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[49].id);
-});
-mouseTarget[49].addEventListener("click", event => {
-    informar(mouseTarget[49].id);
-});
-//50
-mouseTarget[50].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[50].id);
-});
-mouseTarget[50].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[50].id);
-});
-mouseTarget[50].addEventListener("click", event => {
-    informar(mouseTarget[50].id);
-});
-//51
-mouseTarget[51].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[51].id);
-});
-mouseTarget[51].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[51].id);
-});
-mouseTarget[51].addEventListener("click", event => {
-    informar(mouseTarget[51].id);
-});
-//52
-mouseTarget[52].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[52].id);
-});
-mouseTarget[52].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[52].id);
-});
-mouseTarget[52].addEventListener("click", event => {
-    informar(mouseTarget[52].id);
-});
-//53
-mouseTarget[53].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[53].id);
-});
-mouseTarget[53].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[53].id);
-});
-mouseTarget[53].addEventListener("click", event => {
-    informar(mouseTarget[53].id);
-});
-//54
-mouseTarget[54].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[54].id);
-});
-mouseTarget[54].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[54].id);
-});
-mouseTarget[54].addEventListener("click", event => {
-    informar(mouseTarget[54].id);
-});
-//55
-
-mouseTarget[55].addEventListener("mouseenter", e => {
-    pintar(mouseTarget[55].id);
-});
-mouseTarget[55].addEventListener("mouseleave", e => {
-    despintar(mouseTarget[55].id);
-});
-
-mouseTarget[55].addEventListener("click", event => {
-    informar(mouseTarget[55].id);
-});
-if(htmlid=="Industrial" || htmlid =="Civil" || htmlid =="Telematica"){
-
-//56
-    mouseTarget[56].addEventListener("mouseenter", e => {
-        pintar(mouseTarget[56].id);
-    });
-    mouseTarget[56].addEventListener("mouseleave", e => {
-        despintar(mouseTarget[56].id);
-    });
-    mouseTarget[56].addEventListener("click", event => {
-        informar(mouseTarget[56].id);
-    });
-//57
-    if (htmlid=="Industrial" || htmlid =="Civil"){
-    mouseTarget[57].addEventListener("mouseenter", e => {
-        pintar(mouseTarget[57].id);
-    });
-    mouseTarget[57].addEventListener("mouseleave", e => {
-        despintar(mouseTarget[57].id);
-    });
-    mouseTarget[57].addEventListener("click", event => {
-        informar(mouseTarget[57].id);
-    });
-
-    //58
-    mouseTarget[58].addEventListener("mouseenter", e => {
-        pintar(mouseTarget[58].id);
-    });
-    mouseTarget[58].addEventListener("mouseleave", e => {
-        despintar(mouseTarget[58].id);
-    });
-    mouseTarget[58].addEventListener("click", event => {
-        informar(mouseTarget[58].id);
-    });}
-
-
-}
-}*/
 
 
 document.getElementById("filtroE").addEventListener("click",e=>{filtro("filtroE")})
