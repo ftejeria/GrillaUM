@@ -1414,18 +1414,7 @@ let materiasEspInd = [
         "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
         "descripcion":""
     },
-    {
-        "id": "Ciencias Humanas II",
-        "hijo": [],
-        "cat": "G",
-        "nombre":"Ciencias Humanas II",
-        "profesor":"Silvia Facal",
-        "creditos":"4,5",
-        "semestre":"VIII",
-        "dicta":"Se dicta en semestre par",
-        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-        "descripcion":""
-    },
+    
     {
         "id": "Automatización y control industrial",
         "hijo": ["Electronica"],
@@ -2210,22 +2199,33 @@ function makeGird(){
 }
 
 
+document.getElementById("hamburger").addEventListener("click", hideButtons);
+function hideButtons(){
+  var button =  document.getElementById("inv")
+
+  if(button.style.visibility==="hidden"){
+    button.style.visibility="visible";
+  }else{
+      button.style.visibility="hidden";
+  }
+  
+}
 
 var staticbool=true;
 var isfiltred=false;
 
 function filtro(id){
     var a;
-    if (id=="filtroE") {
+    if (id=="filtroE" || id=="filtroEs" ) {
         isfiltred=true;
         a="E";
     }
-    else if(id=="filtroG"){
+    else if(id=="filtroG"|| id=="filtroGs"){
         a="G"
 
         isfiltred=true;
     }
-    else if(id=="filtroC"){
+    else if(id=="filtroC"|| id=="filtroCs"){
         a="C"
         isfiltred=true;
 
@@ -2299,6 +2299,7 @@ if (!isfiltred ) {
             }
     }
 }
+
 
 }
 
@@ -2419,6 +2420,12 @@ document.getElementById("filtroE").addEventListener("click",e=>{filtro("filtroE"
 document.getElementById("filtroG").addEventListener("click",e=>{filtro("filtroG")})
 
 document.getElementById("filtroC").addEventListener("click",e=>{filtro("filtroC")})
+
+document.getElementById("filtroEs").addEventListener("click",e=>{filtro("filtroEs")})
+
+document.getElementById("filtroGs").addEventListener("click",e=>{filtro("filtroGs")})
+
+document.getElementById("filtroCs").addEventListener("click",e=>{filtro("filtroCs")})
 
 document.getElementById("todos").addEventListener("click",e=>{filtro("todo")})
 

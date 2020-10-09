@@ -30,7 +30,7 @@
         <a class="navbar-brand " href="#"><img src="http://fceecat.um.edu.uy/imgs/logo.png"  class="logo-brand" alt="logo" ></a>
         <h4 class="nombrejuego">Ingenieria Informática</h4>
         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class = "icon ion-md-grid" > </i>  
         </button>
       
@@ -57,34 +57,49 @@
         </div>
       </div>
       </nav>
+      <div class=" navbar justify-content-center invisibles" id="inv" style="position: fixed;">
+        <button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
+        <button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
+        <button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
+        
+    </div>
 
 
-      <div class="container-fluid " id="backg"> 
-        <div class="row justify-content-center" id="todos">
-            <div class="col-1" id="sem1"><div>Sem I <br> (37.5) </div><hr>
-            </div>
-            <div class="col-1" id="sem2"><div>Sem II <br> (37.5) </div><hr>
-            </div>
-            <div class="col-1" id="sem3"><div>Sem III <br> (42) </div><hr>
-            </div>
-            <div class="col-1" id="sem4"><div>Sem IV <br> (40.5) </div><hr>
-            </div>
-            <div class="col-1" id="sem5"><div>Sem V <br> (39) </div><hr>
-            </div>
-            <div class="col-1" id="sem6"><div>Sem VI <br> (39) </div><hr>
-            </div>
-            <div class="col-1" id="sem7"><div>Sem VII <br> (37.5) </div><hr>
-            </div>
-            <div class="col-1" id="sem8"><div>Sem VIII <br> (42) </div><hr>
-            </div>
-            <div class="col-1" id="sem9"><div>Sem IX <br> (42) </div><hr>
-                </div>
-            <div class="col-1" id="sem10"><div>Sem X <br> (40.5) </div><hr>
-              </div>
+      <table  id="backg"> 
+        <tr id="todos">
+            <th  id="sem1"><div>Sem I <br> (37.5) <hr></div>
+            </th>
+            <th  id="sem2"><div>Sem II <br> (37.5) <hr></div>
+            </th>
+            <th th id="sem3"><div>Sem III <br> (42) <hr></div>
+            </th>
+            <th  id="sem4"><div>Sem IV <br> (40.5) <hr></div>
+            </th>
+            <th  id="sem5"><div>Sem V <br> (39) <hr></div>
+            </th>
+            <th  id="sem6"><div>Sem VI <br> (39) <hr></div>
+            </th>
+            <th  id="sem7"><div>Sem VII <br> (37.5) <hr></div>
+            </th>
+            <th  id="sem8"><div>Sem VIII <br> (42) <hr></div>
+            </th>
+            <th  id="sem9"><div>Sem IX <br> (42) <hr></div>
+                </th>
+            <th  id="sem10"><div>Sem X <br> (40.5) <hr> </div>
+              </tr>
+           </table>
+
+           <div class="visibles" >
+            <button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
+            <button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
+            <button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
+           
         </div>
-        </div>
-
-
+        <p style="position: re;"><button type="button" class="btn btn-light filtro" >CET/IDIOMAS/MLE</button>Cursos de Especialización Técnica electivos (36 créditos). En general, se cursan a partir del semestre VII <br>
+          Idiomas y Materias de Libre Elección (18 créditos). Se cursan en cualquier momento de la carrera. <br>
+          Pueden cursarse como CETs o MLE materias obligatorias (específicas o comunes) de las otras carreras de Ingeniería,Para decidir en qué semestre cursar CETs, idiomas y materias de libre elección se recomienda consultar con el asesor académico. </p>
+      
+            
 
 
         <div class="overlay" id="overlay">
@@ -103,26 +118,7 @@
 
             </div>
         </div>
-        <div class="container-fluid " style="margin-top: 50px;"  >
-          <div class="row ">
-            <div class="col-6 ">
-                
-                <button type="button" class="btn btn-success filtro" id="filtroE">Especificas</button>
-                <button type="button" class="btn btn-warning filtro" id="filtroC">Comunes</button>
-                <button type="button" class="btn btn-info filtro" id="filtroG">Generales</button>
-              
-            </div>
-            <div class="col-6 ">
-                
-              
-              <p><button type="button" class="btn btn-light filtro" >CET/IDIOMAS/MLE</button>Cursos de Especialización Técnica electivos (36 créditos). En general, se cursan a partir del semestre VII <br>
-                Idiomas y Materias de Libre Elección (18 créditos). Se cursan en cualquier momento de la carrera. <br>
-                Pueden cursarse como CETs o MLE materias obligatorias (específicas o comunes) de las otras carreras de Ingeniería,Para decidir en qué semestre cursar CETs, idiomas y materias de libre elección se recomienda consultar con el asesor académico. </p>
-              
-            
-          </div>
-          </div>
-        </div>
+   
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

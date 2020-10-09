@@ -6,9 +6,6 @@ body{
 	background-attachment: fixed;
 }
 
-#todos{
-	margin-top: 20px;
-}
 
 
 @media screen and (max-width: 1330px){ 
@@ -30,6 +27,12 @@ body{
 	
 }
 
+.invisibles{
+	visibility: hidden;
+	display: none;
+	margin-top: -70px;
+	
+}
 
 -->
 
@@ -44,9 +47,10 @@ body{
 	button#cets {
     max-width: 50%;
 	}
+}
 	
 
-}
+
 
 @media screen and (max-width: 1160px){ 
 	.row{
@@ -113,10 +117,33 @@ body{
     max-width: 92%;
 	}
 	#footer-content{
-		visibility: hidden;
+		visibility: 
+		hidden;
 	}
+	#inv{
+		visibility: visible;
+		display: block;
+		width: 100%;
+		
+		position: sticky;
+		text-align: center;
+	}
+	.visibles{
+		visibility: hidden;
+		
+	}
+	
 
+	#backg{
+		margin-top: 150px;
+	}
+	#backnavbarr{
+		margin-top: -150px;
+	}
+	
+	
 }
+
 
 @media screen and (max-width: 770px){ 
 	.row{
@@ -191,6 +218,7 @@ body{
 	#popup2{
 		width:90%;
 	}
+	
 
 }
 
@@ -223,9 +251,12 @@ body{
 
 }
 
-#backnavbarr{
-	width:100%;
+.navbar{
+	position: fixed;
+	margin-top: -80px;
 	background-color: #004E91;
+	width: 100%;
+	min-height: 70px;
 }
 #footer-content {
 	background: #004E91;
@@ -234,12 +265,6 @@ body{
 	  bottom: 0;
 	  position:fixed;
   }
-.navbar{
-    background-color: white;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 60, .05);
-    min-height: 70px;
-    width: 100%;
-    }
 
 #media_icon:hover{
     color:yellow;
@@ -301,7 +326,9 @@ p{
 .col-1{
 	display: table;
 }
-
+#todos{
+	text-align: center;
+}
 
 .overlay{
 	background-color: rgba(0,0,0,.3);
@@ -401,14 +428,22 @@ p{
 .popup.active{
 	opacity: 1;
 	transform: scale(1);
-	background-image: url("images/fondoBlanco.jpg");
+	
 }
 
 .popup{
 	opacity: 0;
 	transform: scale(.6);
 }
-
+th{
+	vertical-align: top;
+	width: 30px;
+	padding: 10px;
+}
+table{
+	margin: auto;
+	margin-top: 80px;
+}
 
 
 .filtro{
