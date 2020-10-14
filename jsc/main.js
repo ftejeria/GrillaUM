@@ -83,7 +83,7 @@ let materiasGenerales=[
    //sem3
    {
        "id": "Cálculo Numérico",
-       "hijo": ["Análisis Matemático II", "Geometría y algebra lineal II"],
+       "hijo": ["Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "G",
        "nombre":"Cálculo Numérico",
        "profesor":"Maximiliano Stock",//falta
@@ -106,7 +106,7 @@ let materiasGenerales=[
    },//sem4
    {
        "id": "Probabilidad y Estaidstica",
-       "hijo": ["Análisis Matemático II"],
+       "hijo": ["Análisis Matemático II","Análisis Matemático I"],
        "cat": "G",
        "nombre":"Probabilidad y Estaidstica",
        "profesor":"Pepe Diaz",
@@ -143,7 +143,7 @@ let materiasGenerales=[
 
    {
        "id": "Investigación Operativa I",
-       "hijo": ["Probabilidad y Estaidstica"],
+       "hijo": ["Probabilidad y Estaidstica","Análisis Matemático II","Análisis Matemático I"],
        "cat": "G",
        "nombre":"Investigación Operativa I",
        "profesor":"Claudio Ruibal",
@@ -264,7 +264,7 @@ let materiasGenerales=[
    },
    {
        "id": "Gestión de Proyecto",
-       "hijo": ["Proyectos de Inversión"],
+       "hijo": ["Proyectos de Inversión","Contabilidad y costos"],
        "cat": "G",
        "nombre":"Gestión de Proyectos",
        "profesor":"Viviana Rocco",  //skere
@@ -306,7 +306,7 @@ matericasComunes=[
    },
    {
        "id": "Investigación Operativa II",
-       "hijo": ["Investigación Operativa I"],
+       "hijo": ["Investigación Operativa I","Probabilidad y Estaidstica","Análisis Matemático II","Análisis Matemático I"],
        "cat": "G",
        "nombre":"Investigación Operativa II",
        "profesor":"Claudio Ruibal",
@@ -371,7 +371,7 @@ matericasComunes=[
    //sem3
    {
        "id": "Análisis Matemático III",
-       "hijo": ["Análisis Matemático II", "Geometría y algebra lineal II"],
+       "hijo": ["Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "C",
        "nombre":"Análisis Matemático III ",
        "profesor":"José Díaz Milesi ",
@@ -449,7 +449,7 @@ matericasComunes=[
    //sem4
    {
        "id": "Diseño de Base de Datos II",
-       "hijo": ["Diseño de Base de Datos I"],
+       "hijo": ["Diseño de Base de Datos I","Programación I"],
        "cat": "C",
        "nombre":"Introducion a Base de Datos II",
        "profesor":"Javier Pereira",
@@ -487,7 +487,7 @@ matericasComunes=[
    
    {
        "id": "Laboratirio TIC I",
-       "hijo": ["Programación II"],
+       "hijo": ["Programación II","Programación I"],
        "cat": "C",
        "nombre":"Laboratirio TIC I",
        "profesor":"Daniel Pereda",
@@ -500,7 +500,7 @@ matericasComunes=[
    },//sem5
    {
        "id": "Sistemas Operativos",
-       "hijo": ["Sistemas Digitales II"],
+       "hijo": ["Sistemas Digitales II","Sistemas Digitales I"],
        "cat": "C",
        "nombre":"Sistemas Operativos",
        "profesor":"Gerardo Quincke",
@@ -551,7 +551,7 @@ matericasComunes=[
    },
    {
        "id": "Electromagnetismo",//faltan datos de exoneracion
-       "hijo": ["Física II", "Análisis Matemático III"],
+       "hijo": ["Física II", "Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "C",
        "nombre":"Electromagnetismo",
        "profesor":"Gerardo Beltrame",
@@ -578,7 +578,7 @@ matericasComunes=[
    },
    {
        "id": "Redes de Datos I",
-       "hijo": ["Sistemas Digitales II", "Práctica profesional 1"],
+       "hijo": ["Sistemas Digitales I","Sistemas Digitales II", "Práctica profesional 1"],
        "cat": "C",
        "nombre":"Redes de Datos I",
        "profesor":"Gustavo Compagnone",
@@ -591,7 +591,7 @@ matericasComunes=[
    },
    {
        "id": "Ingeniería de Software I",
-       "hijo": ["Laboratirio TIC I"],
+       "hijo": ["Laboratirio TIC I","Programación II","Programación I"],
        "cat": "C",
        "nombre":"Ingeniería de Software I",
        "profesor":"Juan Pablo Núñez",
@@ -700,8 +700,8 @@ let materiasEspecificasTel=[
     //sem4
    
    {
-       "id": "Sistemas Lineales I ",
-       "hijo": ["Análisis Matemático III"],
+       "id": "Sistemas Lineales I",
+       "hijo": ["Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"Sistemas Lineales",
        "profesor":"Hueso Abreu",
@@ -726,7 +726,7 @@ let materiasEspecificasTel=[
     //sem6
     {
        "id": "Muestreo y Procesamiento Digital",
-       "hijo": ["Sistemas Lineales I "],
+       "hijo": ["Sistemas Lineales I","Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"Muestreo y Procesamiento Digital",
        "profesor":"Juan Piaggio",
@@ -738,7 +738,7 @@ let materiasEspecificasTel=[
    },
    {
        "id": "Medidas e Instalaciones Eléctricas",
-       "hijo": ["Electromagnetismo"],
+       "hijo": ["Electromagnetismo","Física II", "Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "C",
        "nombre":"Medidas e Instalaciones Eléctricas ",
        "profesor":"Andrés Merello ",
@@ -2428,7 +2428,7 @@ let materiasLicInf=[
 
    {
        "id": "Sistemas Operativos",
-       "hijo": ["Sistemas Digitales II"],
+       "hijo": ["Sistemas Digitales II","Sistemas Digitales I"],
        "cat": "C",
        "nombre":"Sistemas Operativos",
        "profesor":"Gerardo Quincke",
@@ -2456,7 +2456,7 @@ let materiasLicInf=[
   //sem6
    {
        "id": "Redes de Datos I",
-       "hijo": ["Sistemas Digitales II", "Práctica profesional 1"],
+       "hijo": ["Sistemas Digitales I","Sistemas Digitales II", "Práctica profesional 1"],
        "cat": "C",
        "nombre":"Redes de Datos I",
        "profesor":"Gustavo Compagnone",
@@ -2817,16 +2817,19 @@ if(!isfiltred){
         
         if (materias[i].id === idpadre) {
             
-            if (materias[i].hijo.length>0) {
-                
+            if (materias[i].hijo!=null) {
+                document.getElementById(materias[i].id).style.backgroundColor = "rgb(224, 224, 224)";
                 for (j = 0; j < materias[i].hijo.length; j++) {
-                    console.log(materias[i].hijo[j])
+                   
+
                     document.getElementById(materias[i].hijo[j]).style.backgroundColor = "rgba(255,99,71,0.5)";
                     document.getElementById(materias[i].hijo[j]).style.boxShadow = "0px 0px 0px 0.2rem rgba(220,20,60,0.5)";
+                    
+
                 }
             
             }
-
+            
         }
         
     }
