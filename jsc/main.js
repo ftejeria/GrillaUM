@@ -10,7 +10,9 @@ let materiasGenerales=[
        "creditos":"9",
        "semestre":"I",
        "exonerable":"Se exonera parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
+       
    },
    {
        "id": "Geometría y Álgebra Lineal I",//falta datos exoneracion
@@ -21,7 +23,8 @@ let materiasGenerales=[
        "creditos":"9",
        "semestre":"I",
        "exonerable":"Se exonera parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    {
        "id": "Física I",//falta datos exoneracion
@@ -32,7 +35,8 @@ let materiasGenerales=[
        "creditos":"7,5",
        "semestre":"I",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":"Se exonera totalmente con nota 10"
+       "descripcion":"Se exonera totalmente con nota 10",
+       "directos": 0
    },
    {
        "id": "Introducción a la Robótica",
@@ -43,7 +47,8 @@ let materiasGenerales=[
        "creditos":"6",
        "semestre":"I",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    {
        "id": "Introducción a la Ingeniería",
@@ -54,7 +59,8 @@ let materiasGenerales=[
        "creditos":"6",
        "semestre":"I",
        "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    //sem2
    {
@@ -66,7 +72,8 @@ let materiasGenerales=[
        "creditos":"9",
        "semestre":"II",
        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Geometría y algebra lineal II",
@@ -78,7 +85,8 @@ let materiasGenerales=[
        "semestre":"II",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    //sem3
    {
@@ -90,7 +98,8 @@ let materiasGenerales=[
        "creditos":"6",
        "semestre":"III",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
    {
        "id": "Ciencias Humanas I",
@@ -102,7 +111,8 @@ let materiasGenerales=[
        "semestre":"III",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },//sem4
    {
        "id": "Probabilidad y Estaidstica",
@@ -114,7 +124,8 @@ let materiasGenerales=[
        "semestre":"IV",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
    {
        "id": "Economía",
@@ -126,7 +137,8 @@ let materiasGenerales=[
        "semestre":"IV",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    }, 
    {
        "id": "Comunicación profesional",
@@ -138,7 +150,8 @@ let materiasGenerales=[
        "semestre":"IV",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },//sem5
 
    {
@@ -151,7 +164,8 @@ let materiasGenerales=[
        "semestre":"V",
        "dicta":"Se dicta en semestre impar",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Práctica profesional 1",
@@ -199,7 +213,8 @@ let materiasGenerales=[
        "semestre":"VII",
        "dicta":"Se dicta en semestre impar",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    {
        "id": "Práctica profesional 2",
@@ -235,7 +250,8 @@ let materiasGenerales=[
        "semestre":"IX",
        "dicta":"Se dicta en semestre impar",
        "exonerable":"No se exonera",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Práctica profesional 3",
@@ -259,7 +275,8 @@ let materiasGenerales=[
        "semestre":"X",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
 
    },
    {
@@ -272,11 +289,12 @@ let materiasGenerales=[
        "semestre":"X",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Ética Profesional",
-       "hijo": [],
+       "hijo": ["Ciencias Humanas I"],
        "cat": "G",
        "nombre":"Ética Profesional",
        "profesor":"Juan Carlos Carrasco, Manuel Vega Utrera",
@@ -284,7 +302,8 @@ let materiasGenerales=[
        "semestre":"X",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    }
 
 ]
@@ -302,7 +321,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera totalmente con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","ind","civ"]
+       "carreras":["tel","ind","civ"],
+       "directos": 0
    },
    {
        "id": "Investigación Operativa II",
@@ -315,7 +335,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["inf","ind","tel"]
+       "carreras":["inf","ind","tel"],
+       "directos": 1
    },
    {
        "id": "Matlab",//falta
@@ -327,7 +348,8 @@ matericasComunes=[
        "semestre":"II",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["ind","civ"]
+       "carreras":["ind","civ"],
+       "directos": 0
    },
 
    {
@@ -340,7 +362,8 @@ matericasComunes=[
        "semestre":"II",
        "exonerable":"no es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["ind","civ"]
+       "carreras":["ind","civ"],
+       "directos": 0
    },
    {
        "id": "Programación I",
@@ -353,7 +376,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera totalmente con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 0
    },
    {
        "id": "Sistemas Digitales I",
@@ -366,7 +390,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 0
    },
    //sem3
    {
@@ -380,10 +405,11 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","ind","civ"]
+       "carreras":["tel","ind","civ"],
+       "directos": 2
    },
    {
-       "id": "Mecánica I ",//error en doc
+       "id": "Mecánica I",//error en doc
        "hijo": ["Física I", "Análisis Matemático I"],
        "cat": "C",
        "nombre":"Mecánica I",
@@ -392,7 +418,8 @@ matericasComunes=[
        "semestre":"III",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["ind","civ"]
+       "carreras":["ind","civ"],
+       "directos": 2
    },
    {
        "id": "Laboratorio CAD",
@@ -404,7 +431,8 @@ matericasComunes=[
        "semestre":"III",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["ind","civ"]
+       "carreras":["ind","civ"],
+       "directos": 0
    },
    {
        "id": "Programación II",
@@ -417,7 +445,9 @@ matericasComunes=[
        "dicta":"Se dicta en semestre pimar",
        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
+
    },//sem3
    {
        "id": "Diseño de Base de Datos I",
@@ -430,7 +460,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
    },
     
    {
@@ -444,7 +475,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"No se exonera",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
    },
    //sem4
    {
@@ -458,11 +490,12 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera totalmente con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
    },
    {
        "id": "Mecánica II",
-       "hijo": ["Mecánica I "],
+       "hijo": ["Mecánica I","Física I", "Análisis Matemático I"],
        "cat": "C",
        "nombre":"Mecánica II",
        "profesor":"Carlos Brun",
@@ -470,11 +503,12 @@ matericasComunes=[
        "semestre":"IV",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["civ","ind"]
+       "carreras":["civ","ind"],
+       "directos": 1
    },
    {
-       "id": "Resistencia de  materiales I",
-       "hijo": ["Mecánica I "],
+       "id": "Resistencia de materiales I",
+       "hijo": ["Mecánica I","Física I", "Análisis Matemático I"],
        "cat": "C",
        "nombre":"",
        "profesor":"",
@@ -482,7 +516,8 @@ matericasComunes=[
        "semestre":"IV",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["civ","ind"]
+       "carreras":["civ","ind"],
+       "directos": 1
    },
    
    {
@@ -496,7 +531,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera totalmente con nota 6",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
    },//sem5
    {
        "id": "Sistemas Operativos",
@@ -509,12 +545,13 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
    },
    
    {
-       "id": "Resistencia de materiales II ",
-       "hijo": ["Resistencia de  materiales I"],
+       "id": "Resistencia de materiales II",
+       "hijo": ["Resistencia de materiales I","Mecánica I","Física I", "Análisis Matemático I"],
        "cat": "C",
        "nombre":"",
        "profesor":"",
@@ -522,7 +559,8 @@ matericasComunes=[
        "semestre":"V",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["civ","ind"]
+       "carreras":["civ","ind"],
+       "directos": 1
    },
    {
        "id": "Ciencia e Ingeniería de materiales",
@@ -534,7 +572,8 @@ matericasComunes=[
        "semestre":"V",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["civ","ind"]
+       "carreras":["civ","ind"],
+       "directos": 1
    },
    {
        "id": "Laboratorio TIC II",
@@ -547,7 +586,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 0
    },
    {
        "id": "Electromagnetismo",//faltan datos de exoneracion
@@ -560,12 +600,13 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","ind"]
+       "carreras":["tel","ind"],
+       "directos": 2
    }, //sem6
 
    {
        "id": "Electrotecnia I",
-       "hijo": ["Electromagnetismo"],
+       "hijo": ["Electromagnetismo","Física II", "Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"Electrotecnia I",
        "profesor":"Mauricio Riera",
@@ -574,11 +615,12 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["ind"]
+       "carreras":["ind"],
+       "directos": 1
    },
    {
        "id": "Redes de Datos I",
-       "hijo": ["Sistemas Digitales I","Sistemas Digitales II", "Práctica profesional 1"],
+       "hijo": ["Sistemas Digitales II", "Práctica profesional 1","Sistemas Digitales I"],
        "cat": "C",
        "nombre":"Redes de Datos I",
        "profesor":"Gustavo Compagnone",
@@ -587,7 +629,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 2
    },
    {
        "id": "Ingeniería de Software I",
@@ -600,7 +643,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
    },
    {
    "id": "Laboratorio TIC III",
@@ -618,7 +662,7 @@ matericasComunes=[
      //sem7
      {
        "id": "Sistemas Distribuidos",
-       "hijo": ["Redes de Datos I"],
+       "hijo": ["Redes de Datos I","Sistemas Digitales II", "Práctica profesional 1","Sistemas Digitales I"],
        "cat": "C",
        "nombre":"Sistemas Distribuidos",
        "profesor":"Daniel Canoniero",
@@ -627,7 +671,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"No es exonerable",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 1
    },
    {
        "id": "Ingeniería Ambiental ",
@@ -639,7 +684,8 @@ matericasComunes=[
        "semestre":"VII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["civ","ind"]
+       "carreras":["civ","ind"],
+       "directos": 0
    },
     {
        "id": "Laboratorio TIC IV",
@@ -652,7 +698,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre impar",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 0
    },//SEM8
    {
        "id": "Laboratorio TIC V",
@@ -665,11 +712,12 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 0
    },
    {
        "id": "Electronica",
-       "hijo": ["electroMag"],
+       "hijo": ["Electromagnetismo","Física II", "Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "C",
        "nombre":"Electrónica",
        "profesor":"--falta info--", //skere
@@ -677,9 +725,9 @@ matericasComunes=[
        "semestre":"VIII",
        "dicta":"Se dicta en semestre par",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
-       ,
-       "carreras":["tel","ind"]
+       "descripcion":"",
+       "carreras":["tel","ind"],
+       "directos": 1
    },//SEM9
    {
        "id": "Laboratorio TIC VI",
@@ -692,7 +740,8 @@ matericasComunes=[
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera con nota -",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
-       "carreras":["tel","inf"]
+       "carreras":["tel","inf"],
+       "directos": 0
    },
 ]
 
@@ -709,19 +758,21 @@ let materiasEspecificasTel=[
        "semestre":"IV",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonerea parcialmente,el practico,con nota 10",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },//sem5
 
    {
        "id": "Sistemas Lineales II",
-       "hijo": ["Sistemas Lineales I ","Física II"],
+       "hijo": ["Sistemas Lineales I","Física II","Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"Sistemas Lineales",
        "profesor":"Marcelo Abreu",
        "creditos":"7,5",
        "semestre":"V",
        "exonerable":"Se exonerea parcialmente,el practico,con nota 9",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
     //sem6
     {
@@ -734,7 +785,8 @@ let materiasEspecificasTel=[
        "semestre":"VI",
        "dicta":"Se dicta en semestre par",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Medidas e Instalaciones Eléctricas",
@@ -746,11 +798,12 @@ let materiasEspecificasTel=[
        "semestre":"VI",
        "dicta":"Se dicta en semestre par",
        "exonerable":"No es exonerable",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },//SEM7
    {
        "id": "Modulación de Señales",
-       "hijo": ["Sistemas Lineales I "],
+       "hijo": ["Sistemas Lineales I","Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"Modulación de Señales",
        "profesor":"Diego Durán",
@@ -759,12 +812,13 @@ let materiasEspecificasTel=[
        "deicta":"Se dicta en semestre impar",
        "dicta":"Se dicta en semestre par",
        "exonerable":"Se exonera con nota 8",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    
    {
        "id": "Redes de Datos II ",
-       "hijo": ["Redes de Datos I"],
+       "hijo": ["Redes de Datos I","Sistemas Digitales I","Sistemas Digitales II", "Práctica profesional 1"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
@@ -772,11 +826,12 @@ let materiasEspecificasTel=[
        "semestre":"VII",
        "dicta":"Se dicta en semestre par",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Ondas Electromagnéticas",
-       "hijo": ["Electromagnetismo"],
+       "hijo": ["Electromagnetismo","Física II", "Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
@@ -784,11 +839,12 @@ let materiasEspecificasTel=[
        "semestre":"VII",
        "dicta":"Se dicta en semestre par",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },//SEM8
    {
        "id": "Sistemas de Transmisión",
-       "hijo": ["Práctica Profesional 2","Ondas Electromagnéticas"],
+       "hijo": ["Práctica profesional 2","Ondas Electromagnéticas","Electromagnetismo","Física II", "Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"Sistemas de Transmisión",
        "profesor":"Rafael Sotelo",
@@ -796,12 +852,13 @@ let materiasEspecificasTel=[
        "semestre":"VIII",
        "dicta":"Se dicta en semestre par",
        "exonerable":"No es exonerale",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },//SEM10
    
    {
        "id": "proyTel",
-       "hijo": ["sistrans", "Electronica","ingsoft"],
+       "hijo": ["Sistemas de Transmisión", "Electronica","Ingeniería de Software I","Laboratirio TIC I","Programación II","Programación I","Práctica profesional 2","Ondas Electromagnéticas","Electromagnetismo","Física II", "Análisis Matemático III","Análisis Matemático II", "Geometría y algebra lineal II","Análisis Matemático I","Geometría y Álgebra Lineal I"],
        "cat": "E",
        "nombre":"Proyecto",
        "profesor":"Hueso Abreu, Thomas Honnins",
@@ -809,7 +866,8 @@ let materiasEspecificasTel=[
        "semestre":"X",
        "dicta":"Se dicta en semestre par",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 3
    },
 ];
    //cets
@@ -1016,7 +1074,7 @@ let materiasEspCiv = [
 
 
    {
-       "id": "Introducción a la Termodinámica (",//falta
+       "id": "Introducción a la Termodinámica",//falta
        "hijo": ["Análisis Matemático I"],
        "cat": "E",
        "nombre":"Laboratorio I Industrial", //skere
@@ -1024,7 +1082,8 @@ let materiasEspCiv = [
        "creditos":"6",
        "semestre":"III",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
   
    
@@ -1037,11 +1096,12 @@ let materiasEspCiv = [
        "creditos":"6",
        "semestre":"IV",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    
    {
-       "id": "Laboratorio I Civil ",
+       "id": "Laboratorio I Civil",
        "hijo": [],
        "cat": "E",
        "nombre":"",
@@ -1049,20 +1109,22 @@ let materiasEspCiv = [
        "creditos":"6",
        "semestre":"IV",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    
    
    {
        "id": "Hidraúlica",
-       "hijo": ["Introducción a la Termodinámica", "Análisis Matemático III"],
+       "hijo": ["Introducción a la Termodinámica", "Análisis Matemático III","Análisis Matemático I","Análisis Matemático II","Geometría y Álgebra Lineal I","Geometría y algebra lineal II"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"7.5",
        "semestre":"V",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
   
 
@@ -1075,11 +1137,12 @@ let materiasEspCiv = [
        "creditos":"6",
        "semestre":"V",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    
    {
-       "id": "Topografía y  cartografia",
+       "id": "Topografía y cartografia",
        "hijo": [],
        "cat": "E",
        "nombre":"",
@@ -1087,159 +1150,170 @@ let materiasEspCiv = [
        "creditos":"7.5",
        "semestre":"VI",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    {
        "id": "Hidrología",
-       "hijo": ["Hidraúlica"],
+       "hijo": ["Hidraúlica","Introducción a la Termodinámica", "Análisis Matemático III","Análisis Matemático I","Análisis Matemático II","Geometría y Álgebra Lineal I","Geometría y algebra lineal II"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"4.5",
        "semestre":"VI",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Mecánica de suelos I",
-       "hijo": [""],
+       "hijo": ["Resistencia de materiales I","Física I", "Análisis Matemático I","Mecánica I"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VI",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Resistencia de materiales III",
-       "hijo": ["Resistencia de materiales II","mecanica2"],
+       "hijo": ["Resistencia de materiales II","Mecánica II","Física I", "Análisis Matemático I","Mecánica I","Resistencia de materiales I"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VI",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
 
    },
    {
-       "id": "Hormigón I ",
-       "hijo": ["Práctica profesional 1","Resistencia de materiales II","ceinIngMat"],
+       "id": "Hormigón I",
+       "hijo": ["Práctica profesional 1","Resistencia de materiales II","Ciencia e Ingeniería de materiales","Fundamentos Químicos de la Ingeniería","Resistencia de materiales II","Mecánica II","Física I", "Análisis Matemático I","Mecánica I","Resistencia de materiales I"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"7.5",
        "semestre":"VI",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 3
    },
-   
-
- 
    {
-       "id": "Mecánica de suelos II",
-       "hijo": ["Mecánica de suelos I "],
+       "id": "Mecánica de Suelos II",
+       "hijo": ["Mecánica de suelos I","Resistencia de materiales I","Física I", "Análisis Matemático I","Mecánica I"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    {
        "id": "Resistencia de materiales IV",
-       "hijo": ["Resistencia de materiales III"],
+       "hijo": ["Resistencia de materiales III","Resistencia de materiales II","Física I", "Análisis Matemático I","Mecánica I","Resistencia de materiales I","Práctica profesional 1","Resistencia de materiales II","Ciencia e Ingeniería de materiales","Fundamentos Químicos de la Ingeniería","Resistencia de materiales II","Mecánica II"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    
    {
-       "id": " Hormigón II",
-       "hijo": [" Hormigón II","Resistencia de materiales III"],
+       "id": "Hormigón II",
+       "hijo": ["Hormigón I","Resistencia de materiales III","Resistencia de materiales II","Mecánica II","Física I", "Análisis Matemático I","Mecánica I","Resistencia de materiales I","Práctica profesional 1","Ciencia e Ingeniería de materiales","Fundamentos Químicos de la Ingeniería"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
   
 
 
    {
        "id": "Ingeniería Sanitaria I",
-       "hijo": ["Hidraúlica","Práctica profesional II"],
+       "hijo": ["Hidraúlica","Práctica profesional 2","Introducción a la Termodinámica", "Análisis Matemático III","Análisis Matemático I","Análisis Matemático II","Geometría y Álgebra Lineal I","Geometría y algebra lineal II"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VIII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
    {
        "id": "Caminos",
-       "hijo": ["Mecánica de Suelos II","Topografía y cartografia"],
+       "hijo": ["Mecánica de Suelos II","Topografía y cartografia","Mecánica de suelos I","Resistencia de materiales I","Física I", "Análisis Matemático I","Mecánica I"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VIII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
    {
        "id": "Transporte",
-       "hijo": [""],
+       "hijo": [],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"4.5",
        "semestre":"VIII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 0
    },
    {
        "id": "Laboratorio III Civil",
-       "hijo": ["Laboratorio II Civil"],
+       "hijo": ["Laboratorio II Civil","Laboratorio I Civil"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"VIII",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
  
    {
        "id": "Ingeniería Sanitaria II",
-       "hijo": ["Ingeniería Sanitaria I","Hidrología","Práctica profesional II"],
+       "hijo": ["Ingeniería Sanitaria I","Hidrología","Práctica profesional 2","Hidraúlica","Introducción a la Termodinámica", "Análisis Matemático III","Análisis Matemático I","Análisis Matemático II","Geometría y Álgebra Lineal I","Geometría y algebra lineal II"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"6",
        "semestre":"IX",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 2
    },
    {
        "id": "Estructuras metálicas y de madera ",
-       "hijo": ["resMat4"],
+       "hijo": ["Resistencia de materiales IV","Resistencia de materiales III","Resistencia de materiales II","Física I", "Análisis Matemático I","Mecánica I","Resistencia de materiales I","Práctica profesional 1","Resistencia de materiales II","Ciencia e Ingeniería de materiales","Fundamentos Químicos de la Ingeniería","Resistencia de materiales II","Mecánica II"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"7.5",
        "semestre":"IX",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
    
    {
@@ -1251,20 +1325,26 @@ let materiasEspCiv = [
        "creditos":"6",
        "semestre":"IX",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 1
    },
  
 
    {
        "id": "Proyecto CIV",
-       "hijo": ["Caminos","Ingeniería Sanitaria II","Hormigón II" ],
+       "hijo": ["Caminos","Ingeniería Sanitaria II","Hormigón II","Ingeniería Sanitaria I","Hidrología","Práctica profesional 2","Hidraúlica","Introducción a la Termodinámica", 
+       "Análisis Matemático III","Análisis Matemático II","Geometría y Álgebra Lineal I","Geometría y algebra lineal II"
+         ,"Mecánica de Suelos II","Topografía y cartografia","Mecánica de suelos I","Resistencia de materiales I","Física I","Mecánica I",
+         "Hormigón I","Resistencia de materiales III","Resistencia de materiales II","Mecánica II","Análisis Matemático I",
+         "Práctica profesional 1","Ciencia e Ingeniería de materiales","Fundamentos Químicos de la Ingeniería"],
        "cat": "E",
        "nombre":"",
        "profesor":"",
        "creditos":"24",
        "semestre":"X",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-       "descripcion":""
+       "descripcion":"",
+       "directos": 3
    },
 
   
@@ -1407,7 +1487,7 @@ let materiasEspInd = [
 
    {
        "id": "Máquinas II",
-       "hijo": ["Práctica profesional II", "Transferencia de calor"],
+       "hijo": ["Práctica profesional 2", "Transferencia de calor"],
        "cat": "E",
        "nombre":"Máquinas II",
        "profesor":"Miguel Baldriz Chouhy",
@@ -2809,23 +2889,27 @@ function filtro(id){
 //----
 
 function pintar(idpadre) {
-
+    var contador = 0
 
 if(!isfiltred){
     
     for (i = 0; i < materias.length; i++) {
-        
+       contador = 0
         if (materias[i].id === idpadre) {
             
             if (materias[i].hijo!=null) {
-                document.getElementById(materias[i].id).style.backgroundColor = "rgb(224, 224, 224)";
+               document.getElementById(materias[i].id).style.backgroundColor = "rgb(224, 224, 224)";
                 for (j = 0; j < materias[i].hijo.length; j++) {
                    
-
+                    if (contador<materias[i].directos) {
                     document.getElementById(materias[i].hijo[j]).style.backgroundColor = "rgba(255,99,71,0.5)";
                     document.getElementById(materias[i].hijo[j]).style.boxShadow = "0px 0px 0px 0.2rem rgba(220,20,60,0.5)";
-                    
-
+                    }
+                    else{
+                        document.getElementById(materias[i].hijo[j]).style.backgroundColor = "rgb(255, 230, 230)";
+                        
+                    }
+                    contador ++;
                 }
             
             }
