@@ -173,7 +173,7 @@ let materiasGenerales=[
        "cat": "G",
        "nombre":"Práctica profesional 1",
        "profesor":"",
-       "creditos":"1",
+       "creditos":"-",
        "semestre":"V",
        "dicta":"Se dicta en semestre impar",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
@@ -222,7 +222,7 @@ let materiasGenerales=[
        "cat": "G",
        "nombre":"Práctica profesional 2",
        "profesor":"",
-       "creditos":"0",
+       "creditos":"-",
        "semestre":"VII",
        "dicta":"Se dicta en semestre impar",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
@@ -259,7 +259,7 @@ let materiasGenerales=[
        "cat": "G",
        "nombre":"Práctica profesional 3",
        "profesor":"",
-       "creditos":"0",
+       "creditos":"-",
        "semestre":"IX",
        "dicta":"Se dicta en semestre impar",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
@@ -1652,7 +1652,7 @@ let materiasEspinf=[
        "cat": "E",
        "nombre":"",
        "profesor":"",
-       "creditos":"",
+       "creditos":"6",
        "semestre":"V",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
@@ -2410,7 +2410,7 @@ let materiasLicInf=[
        "cat": "E",
        "nombre":"",
        "profesor":"",
-       "creditos":"",
+       "creditos":"6",
        "semestre":"V",
        "exonerable":"",// "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
        "descripcion":"",
