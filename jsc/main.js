@@ -129,7 +129,7 @@ let materiasGenerales = [
     dicta: "Se dicta en semestre par",
     exonerable: "Se exonerea parcialmente,el practico,con nota 10", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
-    directos: 2,
+    directos: 1,
   },
   {
     id: "Economía",
@@ -346,7 +346,7 @@ matericasComunes = [
     dicta: "Se dicta en semestre impar",
     exonerable: "Se exonera con nota 8", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
-    carreras: ["inf", "ind", "tel"],
+    carreras: ["inf", "ind"],
     directos: 1,
   },
   {
@@ -658,7 +658,7 @@ matericasComunes = [
     hijo: [
       "Sistemas Digitales II",
       "Práctica profesional 1",
-      "Sistemas Digitales I",
+      "Sistemas Digitales I"
     ],
     cat: "C",
     nombre: "Redes de Datos I",
@@ -988,7 +988,7 @@ let materiasEspecificasTel = [
     ],
     cat: "E",
     nombre: "Proyecto",
-    profesor: "Hueso Abreu, Thomas Honnins",
+    profesor: "Marcelo Abreu, Thomas Honnins",
     creditos: "24",
     semestre: "X",
     dicta: "Se dicta en semestre par",
@@ -1344,7 +1344,6 @@ let materiasEspCiv = [
       "Resistencia de materiales II",
       "Ciencia e Ingeniería de materiales",
       "Fundamentos Químicos de la Ingeniería",
-      "Resistencia de materiales II",
       "Mecánica II",
       "Física I",
       "Análisis Matemático I",
@@ -1387,11 +1386,6 @@ let materiasEspCiv = [
       "Análisis Matemático I",
       "Mecánica I",
       "Resistencia de materiales I",
-      "Práctica profesional 1",
-      "Resistencia de materiales II",
-      "Ciencia e Ingeniería de materiales",
-      "Fundamentos Químicos de la Ingeniería",
-      "Resistencia de materiales II",
       "Mecánica II",
     ],
     cat: "E",
@@ -1528,11 +1522,6 @@ let materiasEspCiv = [
       "Análisis Matemático I",
       "Mecánica I",
       "Resistencia de materiales I",
-      "Práctica profesional 1",
-      "Resistencia de materiales II",
-      "Ciencia e Ingeniería de materiales",
-      "Fundamentos Químicos de la Ingeniería",
-      "Resistencia de materiales II",
       "Mecánica II",
     ],
     cat: "E",
@@ -1738,11 +1727,7 @@ let materiasEspInd = [
     id: "Transferencia de Calor",
     hijo: [
       "Termodinámica",
-      "Análisis Matemático III",
-      "Análisis Matemático II",
       "Análisis Matemático I",
-      "Geometría y Álgebra Lineal I",
-      "Geometría y algebra lineal II",
     ],
     cat: "E",
     nombre: "Transferencia de Calor",
@@ -1786,6 +1771,8 @@ let materiasEspInd = [
     hijo: [
       "Práctica profesional 2",
       "Transferencia de Calor",
+      "Mecánica de fluídos",
+      "Práctica profesional 1",
       "Termodinámica",
       "Análisis Matemático III",
       "Análisis Matemático II",
@@ -1801,7 +1788,7 @@ let materiasEspInd = [
     dicta: "Se dicta en semestre par",
     exonerable: "No es exonerable", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
-    directos: 2,
+    directos: 3,
   },
 
   {
@@ -1879,6 +1866,8 @@ let materiasEspInd = [
       "Máquinas II",
       "Práctica profesional 2",
       "Transferencia de Calor",
+      "Mecánica de fluídos",
+      "Práctica profesional 1",
       "Termodinámica",
       "Análisis Matemático III",
       "Análisis Matemático II",
@@ -1904,6 +1893,8 @@ let materiasEspInd = [
       "Máquinas III",
       "Electrotecnia I",
       "Electromagnetismo",
+      "Mecánica de fluídos",
+      "Práctica profesional 1",
       "Física II",
       "Análisis Matemático III",
       "Análisis Matemático II",
@@ -2009,7 +2000,7 @@ let materiasEspinf = [
     semestre: "VI",
     exonerable: "", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
-    directos: 0,
+    directos: 2,
   },
 
   {
@@ -2097,7 +2088,8 @@ let materiasEspinf = [
   },
   {
     id: "Inteligencia de Negocios ",
-    hijo: ["Diseño de Base de Datos I"],
+    hijo: ["Diseño de Base de Datos I",
+          "Programación I"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2117,6 +2109,9 @@ let materiasEspinf = [
       "Laboratirio TIC I",
       "Programación II",
       "Programación I",
+      "Sistemas Digitales II",
+      "Práctica profesional 1",
+      "Sistemas Digitales I"
     ],
     cat: "E",
     nombre: "",
@@ -2206,6 +2201,7 @@ let materiasCienciaDatos = [
     semestre: "II",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
     id: "Antropologia",
@@ -2250,6 +2246,7 @@ let materiasCienciaDatos = [
     semestre: "III",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
     id: "Análisis Financiero Internacional",
@@ -2261,10 +2258,11 @@ let materiasCienciaDatos = [
     semestre: "III",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
     id: "Probabilidad",
-    hijo: ["Calculo"],
+    hijo: ["Calculo", "Calculo Basico"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2272,6 +2270,7 @@ let materiasCienciaDatos = [
     semestre: "III",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
     id: "Introducción a la Ciencia de Datos",
@@ -2283,10 +2282,21 @@ let materiasCienciaDatos = [
     semestre: "III",
     exonerable: "",
     descripcion: "",
+  },
+ {   id: "Práctica profesional 1",
+    hijo: [],
+    cat: "G",
+    nombre: "Práctica profesional 1",
+    profesor: "",
+    creditos: "10",
+    semestre: "III",
+    dicta: "Se dicta en semestre impar",
+    exonerable: "", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+    descripcion: "",
   }, //SEM4
   {
     id: "Estadística I",
-    hijo: ["Probabilidad"],
+    hijo: ["Probabilidad","Práctica profesional 1","Calculo", "Calculo Basico"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2294,6 +2304,7 @@ let materiasCienciaDatos = [
     semestre: "IV",
     exonerable: "",
     descripcion: "",
+    directos: 2,
   },
   {
     id: "Matemática Financiera",
@@ -2308,7 +2319,7 @@ let materiasCienciaDatos = [
   },
   {
     id: "Inteligencia de Negocios",
-    hijo: ["Diseño de base de datos 1"],
+    hijo: ["Diseño de base de datos 1", "Programacion Analitica"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2316,6 +2327,7 @@ let materiasCienciaDatos = [
     semestre: "IV",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
     id: "Ética Profesional I",
@@ -2341,7 +2353,7 @@ let materiasCienciaDatos = [
   }, //SEM5
   {
     id: "Estadística II",
-    hijo: ["Probabilidad"],
+    hijo: ["Probabilidad", "Calculo", "Calculo Basico"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2349,10 +2361,11 @@ let materiasCienciaDatos = [
     semestre: "V",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
     id: "Investigación Operativa I",
-    hijo: ["Probabilidad", "Estadística I"],
+    hijo: ["Probabilidad", "Estadística I","Práctica profesional 1","Calculo", "Calculo Basico"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2360,6 +2373,7 @@ let materiasCienciaDatos = [
     semestre: "V",
     exonerable: "",
     descripcion: "",
+    directos: 2,
   },
   {
     id: "Tecnologías de Avanzada",
@@ -2382,16 +2396,29 @@ let materiasCienciaDatos = [
     semestre: "V",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
-    id: "Investigación de merLaboratorio CADo",
-    hijo: ["Práctica Profesional I"],
+    id: "Investigación de mercado",
+    hijo: ["Práctica profesional 1"],
     cat: "E",
     nombre: "",
     profesor: "",
     creditos: "6",
     semestre: "V",
     exonerable: "",
+    descripcion: "",
+    directos: 1,
+  },
+  {   id: "Práctica profesional 2",
+    hijo: [],
+    cat: "G",
+    nombre: "Práctica profesional 1",
+    profesor: "",
+    creditos: "10",
+    semestre: "V",
+    dicta: "Se dicta en semestre impar",
+    exonerable: "", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
   }, //SEM6
   {
@@ -2415,10 +2442,11 @@ let materiasCienciaDatos = [
     semestre: "VI",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
   {
     id: "Econometría I",
-    hijo: ["Estadística II", "Algebra"],
+    hijo: ["Estadística II", "Algebra", "Probabilidad", "Calculo", "Calculo Basico"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2426,6 +2454,7 @@ let materiasCienciaDatos = [
     semestre: "VI",
     exonerable: "",
     descripcion: "",
+    directos: 2,
   },
   {
     id: "Analítica de Negocios",
@@ -2440,7 +2469,7 @@ let materiasCienciaDatos = [
   },
   {
     id: "Gestión de sistemas de información",
-    hijo: ["Introduccion Analitica Empresarial"],
+    hijo: [],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2459,6 +2488,7 @@ let materiasCienciaDatos = [
     semestre: "VII",
     exonerable: "",
     descripcion: "",
+    directos:1,
   },
   {
     id: "Proyectos de Inversión",
@@ -2483,17 +2513,6 @@ let materiasCienciaDatos = [
     descripcion: "",
   },
   {
-    id: "Contabilidad de Gestión",
-    hijo: ["Introduccion a la Contabilidad"],
-    cat: "E",
-    nombre: "",
-    profesor: "",
-    creditos: "6",
-    semestre: "VI",
-    exonerable: "",
-    descripcion: "",
-  },
-  {
     id: "Marketing Digital",
     hijo: [],
     cat: "E",
@@ -2505,6 +2524,18 @@ let materiasCienciaDatos = [
     descripcion: "",
   },
   {
+    id: "Contabilidad de Gestión",
+    hijo: ["Introduccion a la Contabilidad"],
+    cat: "E",
+    nombre: "",
+    profesor: "",
+    creditos: "6",
+    semestre: "VII",
+    exonerable: "",
+    descripcion: "",
+    directos:1,
+  },
+  {
     id: "Derecho Telemático",
     hijo: [],
     cat: "E",
@@ -2514,7 +2545,18 @@ let materiasCienciaDatos = [
     semestre: "VII",
     exonerable: "",
     descripcion: "",
-  }, //SEM8
+  },
+  {   id: "Práctica profesional 3",
+  hijo: [],
+  cat: "G",
+  nombre: "Práctica profesional 1",
+  profesor: "",
+  creditos: "10",
+  semestre: "VII",
+  dicta: "Se dicta en semestre impar",
+  exonerable: "", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
+  descripcion: "",
+}, //SEM8
   {
     id: "PROYECTO DE FIN DE CARRERA",
     hijo: [],
@@ -2595,6 +2637,7 @@ let materiasLicInf = [
     semestre: "II",
     exonerable: "Se exonerea parcialmente,el practico,con nota 10", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
+    directos: 1,
   },
 
   //sem3
@@ -2879,6 +2922,7 @@ let materiasLicInf = [
     exonerable: "Se exonera totalmente con nota 9", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
     carreras: ["tel", "inf"],
+    directos: 1,
   },
 
   {
@@ -2972,7 +3016,7 @@ let materiasLicInf = [
     exonerable: "No es exonerable", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
     carreras: ["tel", "inf"],
-    directos: 1,
+    directos: 2,
   },
   {
     id: "Ingeniería de Software I",
