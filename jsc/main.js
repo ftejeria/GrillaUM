@@ -2559,7 +2559,7 @@ let materiasCienciaDatos = [
 }, //SEM8
   {
     id: "PROYECTO DE FIN DE CARRERA",
-    hijo: [],
+    hijo: ["Finanzas I","Matemática Financiera"],
     cat: "E",
     nombre: "",
     profesor: "",
@@ -2567,6 +2567,7 @@ let materiasCienciaDatos = [
     semestre: "VIII",
     exonerable: "",
     descripcion: "",
+    directos: 1,
   },
 ];
 
@@ -2593,17 +2594,7 @@ let materiasLicInf = [
     exonerable: "Se exonera parcialmente,el practico,con nota 10", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
     descripcion: "",
   },
-  {
-    id: "Física I", //falta datos exoneracion
-    hijo: [],
-    cat: "G",
-    nombre: "Física I",
-    profesor: "Juan Pablo Fossati",
-    creditos: "7,5",
-    semestre: "I",
-    exonerable: "", // "se exonerea parcialmente,el practico,con nota tal",se exonera totalmente con nota tal,no es exonerable
-    descripcion: "Se exonera totalmente con nota 10",
-  },
+
   {
     id: "Introducción a la Robótica",
     hijo: [],
