@@ -3465,9 +3465,7 @@ function cerrar() {
   overlay.classList.remove("active");
   popup.classList.remove("active");
 }
-function cetss(){
-  
-}
+
 
 function cets() {
   (overlay2 = document.getElementById("overlay2")),
@@ -3496,9 +3494,17 @@ for (let index = 0; index < mouseTarget.length; index++) {
   mouseTarget[index].addEventListener("mouseenter", (event) => {
     subpintar(mouseTarget[index].id);
     pintar(mouseTarget[index].id);
+    var dir =document.getElementById("prevDir")
+    var ind =document.getElementById("prevInd")
+    dir.style.visibility=''
+    ind.style.visibility=''
   });
   mouseTarget[index].addEventListener("mouseleave", (event) => {
     despintar(mouseTarget[index].id);
+    var dir =document.getElementById("prevDir")
+    var ind =document.getElementById("prevInd")
+    dir.style.visibility='hidden'
+    ind.style.visibility='hidden'
   });
 
   mouseTarget[index].addEventListener("click", (event) => {
@@ -3532,7 +3538,4 @@ document.getElementById("filtroCs").addEventListener("click", (e) => {
 
 document.getElementById("todos").addEventListener("click", (e) => {
   filtro("todo");
-});
-document.getElementById("cets").addEventListener("click", (e) => {
-  cetss();
 });

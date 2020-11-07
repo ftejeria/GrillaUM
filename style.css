@@ -9,9 +9,17 @@ body {
 body{
 	zoom: 75%;
 }
+
+}
+@media screen and (max-width: 1700px) {
+	body{
+    zoom: 90%;
+  }
 }
 @media screen and (max-width: 1330px) {
-	
+	body{
+    zoom: 90%;
+  }
   .row {
     max-width: 1200px;
   }
